@@ -110,7 +110,7 @@ function disableDarkMode() {
   document.documentElement.classList.remove("dark");
 }
 
-function toggleDarkMode() {
+function checkDarkMode() {
   const currentMode = localStorage.getItem("mavka_ukr_light_mode");
   if (currentMode === "auto") {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -152,11 +152,11 @@ function toggleDarkMode() {
   }
 }
 
-if (!localStorage.  getItem("mavka_ukr_light_mode")) {
+if (!localStorage.getItem("mavka_ukr_light_mode")) {
   localStorage.setItem("mavka_ukr_light_mode", "auto");
 }
 
-toggleDarkMode();
+checkDarkMode();
 
 document.querySelectorAll("[data-navigation-light-toggle=true]").forEach((el) => {
   el.addEventListener("click", () => {
@@ -168,8 +168,7 @@ document.querySelectorAll("[data-navigation-light-toggle=true]").forEach((el) =>
     } else {
       localStorage.setItem("mavka_ukr_light_mode", "auto");
     }
-
-    toggleDarkMode();
+    checkDarkMode();
   });
 });
 

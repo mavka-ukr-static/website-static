@@ -810,6 +810,10 @@ html.mobile .MavkaHomeHeroRight {
 }
 
 .MavkaHomeFeature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -829,6 +833,7 @@ html.mobile .MavkaHomeHeroRight {
 }
 
 html.mobile .MavkaHomeFeatures {
+  margin-top: calc(10rem - 50px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -837,7 +842,7 @@ html.mobile .MavkaHomeFeatures {
   padding-right: 2rem;
 }
 
-html.mobile .MavkaHomeFeature {
+html.mobile .MavkaHomeFeature + .MavkaHomeFeature {
   margin-top: 3rem;
 }
 
@@ -847,6 +852,10 @@ html.mobile .MavkaHomeFeature {
   overflow: hidden;
   min-height: 120vh;
   background-color: black;
+}
+
+html.mobile .MavkaHomeAtomContainer {
+  margin-top: 10rem;
 }
 
 .MavkaHomeAtom {
