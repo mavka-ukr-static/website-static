@@ -525,6 +525,11 @@ html:not(.mobile) .MavkaNavigationMobileMenu[data-hidden=false] {
   grid-template-columns: 1fr 1fr;
 }
 
+html.mobile .MavkaHomeHero {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .MavkaHomeHeroLeft {
   margin-top: 2rem;
 }
