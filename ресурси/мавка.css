@@ -10,6 +10,8 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 :root {
@@ -630,6 +632,10 @@ html:not(.mobile) .MavkaNavigationMobileMenu[data-hidden=false] {
   z-index: 1;
 }
 
+html.mobile .MavkaHomeHeroCodeBlock {
+  border-radius: 0;
+}
+
 .MavkaHomeHeroCodeBlock [data-code-active=false] {
   display: none;
 }
@@ -674,6 +680,10 @@ html:not(.mobile) .MavkaNavigationMobileMenu[data-hidden=false] {
   box-shadow: var(--code-shadow);
   max-width: 100%;
   overflow-x: auto;
+}
+
+html.mobile .MavkaHomeHeroCodeBlockTabs {
+  border-top-left-radius: 0;
 }
 
 .MavkaHomeHeroCodeBlockTabs::before {
@@ -761,14 +771,27 @@ html:not(.mobile) .MavkaNavigationMobileMenu[data-hidden=false] {
   width: 100px;
 }
 
+html.mobile .MavkaHomeHeroPattern:not(.p1) {
+  display: none;
+}
+
 html.mobile .MavkaHomeHero {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+html.mobile .MavkaHomeHeroLeft {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 html.mobile .MavkaHomeHeroRight {
   margin-top: 5rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  max-width: unset;
 }
 
 .MavkaHomeFeatures {
@@ -805,7 +828,8 @@ html.mobile .MavkaHomeFeatures {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 html.mobile .MavkaHomeFeature {
