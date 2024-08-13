@@ -152,6 +152,10 @@ function toggleDarkMode() {
   }
 }
 
+if (!localStorage.getItem("mavka_ukr_light_mode")) {
+  localStorage.setItem("mavka_ukr_light_mode", "auto");
+}
+
 toggleDarkMode();
 
 document.querySelectorAll("[data-navigation-light-toggle=true]").forEach((el) => {
