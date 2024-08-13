@@ -152,7 +152,7 @@ function toggleDarkMode() {
   }
 }
 
-if (!localStorage.getItem("mavka_ukr_light_mode")) {
+if (!localStorage.  getItem("mavka_ukr_light_mode")) {
   localStorage.setItem("mavka_ukr_light_mode", "auto");
 }
 
