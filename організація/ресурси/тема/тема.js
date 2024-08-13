@@ -1,4 +1,4 @@
-window.__randomize_color__ = function () {
+window.__randomize_color__ = function() {
   const randomColorName = () => {
     const colors = ["black", "blue", "yellow", "red"];
     return colors[Math.floor(Math.random() * colors.length)];
@@ -11,3 +11,26 @@ window.__randomize_color__ = function () {
   document.documentElement.style.setProperty("--primary-transparent-button-rgb", `var(--${colorName}-transparent-button-rgb`);
 };
 window.__randomize_color__();
+
+function enableMobileMode() {
+  document.documentElement.classList.add("mobile");
+}
+
+function disableMobileMode() {
+  document.documentElement.classList.remove("mobile");
+}
+
+function checkMobileMode() {
+  if (window.innerWidth < 950) {
+    enableMobileMode();
+  }
+  if (window.innerWidth >= 950) {
+    disableMobileMode();
+  }
+}
+
+checkMobileMode();
+
+window.addEventListener("resize", () => {
+  checkMobileMode();
+});

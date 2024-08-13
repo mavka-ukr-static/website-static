@@ -8,13 +8,15 @@
 
   <title>Субʼєкт | Документація Мавки</title>
 
+  <link rel="icon" type="image/svg" href="./ресурси/тема/документація.лого.svg">
+
   <link rel="stylesheet" href="./ресурси/ядро/highlight-atom-one-dark.css">
 <link rel="stylesheet" href="./ресурси/тема/тема.css">
 </head>
 <body>
 
 <div class="XDocsPage">
-  <div class="XDocsPageNavigation"><div class="XDocsPageNavigationHead">
+  <div class="XDocsPageNavigation" data-is-navigation="true" data-hidden-on-mobile="true"><div class="XDocsPageNavigationHead">
   <a href="./index.html" class="XDocsPageNavigationHeadLogo">
     <img src="./ресурси/тема/документація.лого.svg" alt="">
   </a>
@@ -168,6 +170,16 @@
   <img src="./ресурси/тема/мавка.лого.svg" alt="">
   Мавка {{ВЕРСІЯ_МАВКИ}}
 </div></div>
+  <button data-is-mobile-navigation-toggle="true" class="XDocsPageMobileNavigationToggle">
+    <svg data-menu-icon="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+    </svg>
+    <svg data-close-icon="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+         fill="currentColor">
+      <path
+        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+    </svg>
+  </button>
   <div class="XDocsPageContent">
     
     
@@ -181,15 +193,15 @@
 <script src="./ресурси/ядро/ядро.js"></script>
 <script src="./ресурси/тема/тема.js"></script>
 
-<script>
-  // if (window.location.protocol !== "file:") {
-  //   document.addEventListener("turbolinks:load", () => {
-  //     Turbolinks.start();
-  //   });
-  //   const turbolinksScript = document.createElement("script");
-  //   turbolinksScript.src = `./ресурси/ядро/turbolinks.min.js`;
-  //   document.head.appendChild(turbolinksScript);
-  // }
-</script>
+<!--<script>-->
+<!--  if (window.location.protocol !== "file:") {-->
+<!--    document.addEventListener("turbolinks:load", () => {-->
+<!--      Turbolinks.start();-->
+<!--    });-->
+<!--    const turbolinksScript = document.createElement("script");-->
+<!--    turbolinksScript.src = `./ресурси/ядро/turbolinks.min.js`;-->
+<!--    document.head.appendChild(turbolinksScript);-->
+<!--  }-->
+<!--</script>-->
 </body>
 </html>

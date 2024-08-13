@@ -43,6 +43,8 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .turbolinks-progress-bar {
@@ -79,14 +81,18 @@ pre, code {
   font-weight: 500;
 }
 
+html.mobile [data-hidden-on-mobile=true] {
+  display: none;
+}
+
 .XDocsPage {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
 }
 .XDocsPage .XDocsPageNavigation {
   position: fixed;
-  z-index: 1000;
+  z-index: 10;
   top: 0;
   bottom: 0;
   width: 320px;
@@ -99,13 +105,23 @@ pre, code {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+html.mobile .XDocsPage .XDocsPageNavigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-right: none;
+}
+
 .XDocsPage .XDocsPageNavigation::-webkit-scrollbar {
   display: none;
 }
 .XDocsPage .XDocsPageNavigation .XDocsPageNavigationHead {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 10;
   background: rgb(var(--bg-rgb));
   border-bottom: 1px solid rgb(var(--border-rgb));
   min-height: 90px;
@@ -124,7 +140,7 @@ pre, code {
 }
 .XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter {
   position: fixed;
-  z-index: 1001;
+  z-index: 11;
   bottom: 0;
   left: 0;
   width: 320px;
@@ -137,13 +153,21 @@ pre, code {
   align-items: center;
   justify-content: center;
 }
+html.mobile .XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-right: none;
+}
+
 .XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter img {
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
 }
 .XDocsPage .XDocsPageNavigation .XDocsPageNavigationItem {
-  z-index: 999;
+  z-index: 9;
   padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
@@ -212,6 +236,39 @@ pre, code {
 .XDocsPage .XDocsPageNavigation [data-navigation-submenu-shown=false] {
   display: none;
 }
+.XDocsPage .XDocsPageMobileNavigationToggle {
+  position: fixed;
+  z-index: 12;
+  top: 1rem;
+  left: 1rem;
+  height: 60px;
+  width: 60px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: rgba(var(--bg-rgb), 0.5);
+  border: none;
+  border-radius: 2px;
+  background-image: radial-gradient(transparent 1px, rgb(var(--bg-rgb)) 1px);
+  background-size: 4px 4px;
+  backdrop-filter: saturate(50%) blur(4px);
+  color: rgb(var(--text-rgb));
+}
+html.mobile .XDocsPage .XDocsPageMobileNavigationToggle {
+  display: flex;
+}
+
+.XDocsPage .XDocsPageMobileNavigationToggle svg {
+  width: 26px;
+  height: 26px;
+}
+.XDocsPage .XDocsPageMobileNavigationToggle:not(.active) [data-close-icon=true] {
+  display: none;
+}
+.XDocsPage .XDocsPageMobileNavigationToggle.active [data-menu-icon=true] {
+  display: none;
+}
 .XDocsPage .XDocsPageContent {
   max-width: 1066px;
   width: 100%;
@@ -223,6 +280,11 @@ pre, code {
   padding-left: calc(320px + 3rem);
   padding-bottom: 4rem;
 }
+html.mobile .XDocsPage .XDocsPageContent {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .XDocsPage .XDocsPageContent .XDocsPageIcon {
   display: flex;
   align-items: center;
@@ -296,6 +358,12 @@ code:not(.hljs) {
   border-radius: 1rem;
   box-shadow: var(--code-shadow);
 }
+html.mobile .XDocsCodeWrapper {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  border-radius: 0;
+}
+
 .XDocsCodeWrapper pre {
   margin: 0;
 }
