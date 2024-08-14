@@ -97,7 +97,7 @@ document.querySelector(".XDocsPageNavigationFooter").innerHTML += `<button class
 
 checkDarkMode();
 
-document.querySelector(".XDocsPageNavigationFooter").addEventListener("click", () => {
+document.querySelector(".XDocsPageNavigationFooterConfigButton").addEventListener("click", () => {
   const currentMode = localStorage.getItem("mavka_ukr_light_mode");
   if (currentMode === "auto") {
     localStorage.setItem("mavka_ukr_light_mode", "light");

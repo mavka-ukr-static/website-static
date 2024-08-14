@@ -98,7 +98,7 @@ html.transitions {
 }
 
 html.dark img:not(.no-dark-shadow), html.dark svg:not(.no-dark-shadow) {
-  filter: drop-shadow(0 0 1px #666);
+  filter: drop-shadow(0 0 1px white);
 }
 
 .turbolinks-progress-bar {

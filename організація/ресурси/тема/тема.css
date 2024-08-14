@@ -66,6 +66,8 @@ html.dark {
   --black-pressed-rgb: 255, 255, 255;
   --black-text-rgb: 0, 0, 0;
   --black-transparent-button-rgb: 255, 255, 255;
+  --blue-text-rgb: 0, 0, 0;
+  --red-text-rgb: 0, 0, 0;
   --bg-rgb: 0, 0, 0;
   --text-rgb: 255, 255, 255;
   --muted-rgb: 153, 153, 153;
@@ -76,7 +78,7 @@ html.dark {
 }
 
 html.dark img:not(.no-dark-shadow), html.dark svg:not(.no-dark-shadow) {
-  filter: drop-shadow(0 0 1px #666);
+  filter: drop-shadow(0 0 1px white);
 }
 
 button {
@@ -344,10 +346,6 @@ html.mobile .XDocsPage .XDocsPageContent {
   justify-content: center;
   margin-bottom: 3rem;
 }
-.XDocsPage .XDocsPageContent .XDocsPageIcon img, .XDocsPage .XDocsPageContent .XDocsPageIcon svg {
-  width: 50px;
-  height: 50px;
-}
 .XDocsPage .XDocsPageContent h1 {
   text-align: center;
 }
@@ -465,6 +463,13 @@ table a:active {
 table img {
   max-width: 100%;
   height: auto;
+}
+
+blockquote {
+  background: rgba(var(--blue-rgb), 0.125);
+  border-left: 0.25rem solid rgb(var(--blue-rgb));
+  padding: 0.25rem 1rem;
+  margin: 1rem 0;
 }
 
 /*# sourceMappingURL=%D1%82%D0%B5%D0%BC%D0%B0.css.map */

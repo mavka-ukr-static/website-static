@@ -212,8 +212,10 @@ window.addEventListener("mousemove", (event) => {
 });
 
 document.querySelector(".MavkaHomeAtomContainer").addEventListener("dblclick", () => {
-  document.documentElement.style.setProperty("--atom-base-size", "350%");
-  document.documentElement.style.setProperty("--atom-base-degree", "0deg");
+  if (!isTouchscreen) {
+    document.documentElement.style.setProperty("--atom-base-size", "350%");
+    document.documentElement.style.setProperty("--atom-base-degree", "0deg");
+  }
 });
 
 document.documentElement.classList.add("transitions");
