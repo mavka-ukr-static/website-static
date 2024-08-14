@@ -186,6 +186,8 @@ window.addEventListener("keyup", (event) => {
   }
 });
 
+const isTouchscreen = "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+
 window.addEventListener("wheel", (event) => {
   if (ctrlPressed) {
     document.documentElement.style.setProperty("--atom-base-size", `${Math.max(1, parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--atom-base-size")) - event.deltaY * 0.05)}%`);
@@ -201,10 +203,12 @@ window.addEventListener("scroll", (event) => {
 });
 
 window.addEventListener("mousemove", (event) => {
-  document.documentElement.style.setProperty("--mouse-x-percentage", `${event.clientX / window.innerWidth * 100}%`);
-  document.documentElement.style.setProperty("--mouse-y-percentage", `${event.clientY / window.innerHeight * 100}%`);
-  document.documentElement.style.setProperty("--mouse-x-degree", `${event.clientX / window.innerWidth * 360}deg`);
-  document.documentElement.style.setProperty("--mouse-y-degree", `${event.clientY / window.innerHeight * 360}deg`);
+  if (!isTouchscreen) {
+    document.documentElement.style.setProperty("--mouse-x-percentage", `${event.clientX / window.innerWidth * 100}%`);
+    document.documentElement.style.setProperty("--mouse-y-percentage", `${event.clientY / window.innerHeight * 100}%`);
+    document.documentElement.style.setProperty("--mouse-x-degree", `${event.clientX / window.innerWidth * 360}deg`);
+    document.documentElement.style.setProperty("--mouse-y-degree", `${event.clientY / window.innerHeight * 360}deg`);
+  }
 });
 
 document.querySelector(".MavkaHomeAtomContainer").addEventListener("dblclick", () => {
