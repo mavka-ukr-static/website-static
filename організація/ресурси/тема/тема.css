@@ -97,7 +97,7 @@ pre, code {
   font-weight: 500;
 }
 
-.XDocsTextSubject {
+subject, .XDocsTextSubject {
   color: #485cb0;
   font-weight: 500;
 }
@@ -403,7 +403,39 @@ code:not(.hljs) {
   background: #abb2bf;
 }
 
+.XDocsCodeImages {
+  bottom: -0.125rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.XDocsCodeImages.bottom {
+  top: -0.125rem;
+  bottom: unset;
+  transform: rotate(180deg);
+  filter: grayscale(1);
+}
+.XDocsCodeImages img {
+  height: 1rem;
+}
+.XDocsCodeImages img:nth-child(5) {
+  height: 2rem;
+}
+html.mobile .XDocsCodeImages {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+html.mobile .XDocsCodeImages img {
+  height: 0.75rem;
+}
+html.mobile .XDocsCodeImages img:nth-child(5) {
+  height: 1.25rem;
+}
+
 .XDocsCodeWrapper {
+  position: relative;
   background: black;
   padding: 0.5rem;
   border-radius: 1rem;
