@@ -72,7 +72,7 @@ html.dark {
   --text-rgb: 255, 255, 255;
   --muted-rgb: 153, 153, 153;
   --border-rgb: 34, 34, 34;
-  --hover-rgb: 14, 14, 14;
+  --hover-rgb: 24, 24, 24;
   --pressed-rgb: 31, 31, 31;
   --code-shadow: 0 0 0 1px #333;
 }
@@ -99,6 +99,11 @@ pre, code {
 
 subject, .XDocsTextSubject {
   color: #485cb0;
+  font-weight: 500;
+}
+
+keyword, .XDocsTextKeyword {
+  color: #c678dd;
   font-weight: 500;
 }
 
@@ -411,17 +416,18 @@ code:not(.hljs) {
   align-items: flex-end;
   justify-content: space-between;
 }
+.XDocsCodeImages img {
+  height: 1rem;
+  z-index: -1;
+}
+.XDocsCodeImages img:nth-child(5) {
+  height: 2rem;
+}
 .XDocsCodeImages.bottom {
   top: -0.125rem;
   bottom: unset;
   transform: rotate(180deg);
   filter: grayscale(1);
-}
-.XDocsCodeImages img {
-  height: 1rem;
-}
-.XDocsCodeImages img:nth-child(5) {
-  height: 2rem;
 }
 html.mobile .XDocsCodeImages {
   margin-left: -2rem;
@@ -436,6 +442,7 @@ html.mobile .XDocsCodeImages img:nth-child(5) {
 
 .XDocsCodeWrapper {
   position: relative;
+  z-index: 1;
   background: black;
   padding: 0.5rem;
   border-radius: 1rem;
