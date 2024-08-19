@@ -45,6 +45,20 @@
   data-navigation-submenu-shown="true"
 >
   <a
+  href="./перша-програма.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Перша програма"
+>
+  Перша програма
+</a>
+<a
+  href="./визначення-субʼєктів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Визначення субʼєктів"
+>
+  Визначення субʼєктів
+</a>
+<a
   href="./створення-дій.html"
   class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="Створення дій"
@@ -185,9 +199,20 @@
   <div class="XDocsPageContent">
     
     <h1>Виконання дій</h1>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-title function_">п</span><span class="hljs-title function_">ривіт</span>()
-  <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(<span class="hljs-string">&quot;Привіт!&quot;</span>)
+<p>Записати виконання <keyword>дії</keyword> в Мавці можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-title function_">д</span><span class="hljs-title function_">одати</span>(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>)
+</code></div></pre>
+<p><keyword>Як</keyword> видно вище, необхідно записати звернення до субʼєкта <keyword>дії</keyword> <keyword>і</keyword>
+після, в дужках, вказати аргументи.</p>
+<p>Існує також можливість вказати аргументи з назвами:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-title function_">д</span><span class="hljs-title function_">одати</span>(а=<span class="hljs-number">2</span>, б=<span class="hljs-number">2</span>)
+</code></div></pre>
+<p>У випадку невідповідності типів аргументів, буде падіння програми (яке можна зловити):</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-title function_">д</span><span class="hljs-title function_">одати</span>(а <span class="hljs-literal">число</span>, б <span class="hljs-literal">число</span>) <span class="hljs-literal">число</span>
+  <span class="hljs-keyword">вернути</span> а + б
 <span class="hljs-keyword">кінець</span>
+
+<span class="hljs-title function_">д</span><span class="hljs-title function_">одати</span>(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;2&quot;</span>) <span class="hljs-comment">;; програма тут впаде</span>
 </code></div></pre>
 
     <div class="XDocsPageContentBcFw">

@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Субʼєкт | Документація Мавки</title>
+  <title>Визначення субʼєктів | Документація Мавки</title>
 
   <link rel="icon" type="image/svg" href="./ресурси/тема/документація.лого.svg">
 
@@ -31,7 +31,7 @@
 <button
   class="XDocsPageNavigationItem"
   data-navigation-item="Практика"
-  data-navigation-item-expanded="false">
+  data-navigation-item-expanded="true">
   Практика
   <span class="XDocsPageNavigationItemArrow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -42,7 +42,7 @@
 <div
   class="XDocsPageNavigationSubmenu"
   data-navigation-submenu="Практика"
-  data-navigation-submenu-shown="false"
+  data-navigation-submenu-shown="true"
 >
   <a
   href="./перша-програма.html"
@@ -53,7 +53,7 @@
 </a>
 <a
   href="./визначення-субʼєктів.html"
-  class="XDocsPageNavigationSubmenuItem "
+  class="XDocsPageNavigationSubmenuItem active"
   data-navigation-item="Визначення субʼєктів"
 >
   Визначення субʼєктів
@@ -83,7 +83,7 @@
 <button
   class="XDocsPageNavigationItem"
   data-navigation-item="Теорія"
-  data-navigation-item-expanded="true">
+  data-navigation-item-expanded="false">
   Теорія
   <span class="XDocsPageNavigationItemArrow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -94,7 +94,7 @@
 <div
   class="XDocsPageNavigationSubmenu"
   data-navigation-submenu="Теорія"
-  data-navigation-submenu-shown="true"
+  data-navigation-submenu-shown="false"
 >
   <a
   href="./вступ-до-теорії.html"
@@ -112,7 +112,7 @@
 </a>
 <a
   href="./субʼєкт.html"
-  class="XDocsPageNavigationSubmenuItem active"
+  class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="Субʼєкт"
 >
   Субʼєкт
@@ -198,20 +198,49 @@
   </button>
   <div class="XDocsPageContent">
     
-    <h1>Субʼєкт</h1>
-<p>Субʼєкт <keyword>є</keyword> фундаментальним поняттям.</p>
-<p>В <subject>Теорії Мавки</subject>, <keyword>як</keyword> у житті, субʼєкт <keyword>є</keyword> тим, хто
-виконує <keyword>дію</keyword> <keyword>або</keyword> хто спричиняє виконання <keyword>дії</keyword>.</p>
-<p>До прикладу, <keyword>якщо</keyword> людина пише на папері, то людина <keyword>є</keyword> субʼєктом.</p>
-<p><keyword>Або</keyword> <keyword>якщо</keyword> машина рухається, то водій <keyword>є</keyword> субʼєктом, бо веде
-машину. Але <keyword>і</keyword> двигун <keyword>є</keyword>
-субʼєктом, адже крутить колеса. Більше того, колесо теж можна вважати субʼєктом, адже котить машину й водія в ній далі.</p>
-<p>Логічно зробити припущення, що субʼєктом може бути будь-який обʼєкт залежно від точки зору. Так <keyword>це і
-є</keyword>.</p>
+    <h1>Визначення субʼєктів</h1>
+<p>Записати визначення субʼєкта в <subject>Мавці</subject> можна використовуючи слово <code>=</code> <keyword>або</keyword> <code>це</code>.
+Спочатку вказуємо сам субʼєкт, <keyword>і</keyword>, через слово, обʼєкт. Наприклад:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">кіт_моєї_сестри = <span class="hljs-title class_">К</span><span class="hljs-title class_">іт</span>(імʼя=<span class="hljs-string">&quot;Тимофій&quot;</span>)
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">число_пі = <span class="hljs-number">3.14</span>
+дві_третини = <span class="hljs-number">2</span> / <span class="hljs-number">3</span>
+Е = м * к ** <span class="hljs-number">2</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">нептун <span class="hljs-keyword">це</span> <span class="hljs-title class_">Р</span><span class="hljs-title class_">акета</span>(...)
+паспорт <span class="hljs-keyword">це</span> <span class="hljs-title class_">Д</span><span class="hljs-title class_">окумент</span>(...)
+мавка <span class="hljs-keyword">це</span> <span class="hljs-title class_">М</span><span class="hljs-title class_">ашинаВказівок</span>(...)
+</code></div></pre>
+<p>Звернутись можна до субʼєкта з поточного середовища <keyword>або</keyword> з батьківського.
+Наприклад:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">а = <span class="hljs-number">2</span>
+
+<span class="hljs-keyword">дія</span> <span class="hljs-title function_">ф</span>()
+  б = <span class="hljs-number">3</span>
+  <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(а) <span class="hljs-comment">;; 2</span>
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-title function_">ф</span>()
+
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(а) <span class="hljs-comment">;; 2</span>
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(б) <span class="hljs-comment">;; помилка</span>
+</code></div></pre>
+<p>Визначити субʼєкт у батьківському середовищі можна використовуючи слово <code>:=</code>. Наприклад:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">а = <span class="hljs-number">2</span>
+
+<span class="hljs-keyword">дія</span> <span class="hljs-title function_">ф</span>()
+  б := <span class="hljs-number">3</span>
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-title function_">ф</span>()
+
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(а) <span class="hljs-comment">;; 2</span>
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(б) <span class="hljs-comment">;; 3</span>
+</code></div></pre>
 
     <div class="XDocsPageContentBcFw">
-      <a data-is-prev="true" href="./обʼєкт.html">Відступ</>
-      <a data-is-next="true" href="./дія.html">Наступ</>
+      <a data-is-prev="true" href="./перша-програма.html">Відступ</>
+      <a data-is-next="true" href="./створення-дій.html">Наступ</>
     </div>
   </div>
 </div>

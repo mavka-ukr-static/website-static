@@ -385,6 +385,7 @@ code:not(.hljs) {
   font-size: 0.9rem;
   box-sizing: border-box;
   font-family: "Fira Code", monospace;
+  box-shadow: var(--code-shadow);
 }
 
 .hljs {
