@@ -79,6 +79,13 @@
 >
   Створення структур
 </a>
+<a
+  href="./створення-обʼєктів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення обʼєктів"
+>
+  Створення обʼєктів
+</a>
 </div>
 <button
   class="XDocsPageNavigationItem"
@@ -217,7 +224,7 @@
   стать
 <span class="hljs-keyword">кінець</span>
 </code></div></pre>
-<p>За необхідності можна вказати типи властивостей або створити структуру без властивостей:</p>
+<p>За необхідності можна вказати типи властивостей, які будуть перевірятись під час створення обʼєкта з цієї структури:</p>
 <pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">П</span><span class="hljs-title class_">аспорт</span>
   прізвище <span class="hljs-literal">текст</span>
   імʼя <span class="hljs-literal">текст</span>
@@ -226,13 +233,92 @@
   стать <span class="hljs-literal">текст</span>
 <span class="hljs-keyword">кінець</span>
 </code></div></pre>
+<p>Можна і створити структуру без властивостей:</p>
 <pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">Щ</span><span class="hljs-title class_">ось</span>
 <span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<p>Властивості, як параметри в дії, можуть мати початкові значення:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">П</span><span class="hljs-title class_">аспорт</span>
+  прізвище <span class="hljs-literal">текст</span> = <span class="hljs-string">&quot;Невідомо&quot;</span>
+  імʼя <span class="hljs-literal">текст</span> = <span class="hljs-string">&quot;Невідомо&quot;</span>
+  по_батькові <span class="hljs-literal">текст</span> = <span class="hljs-string">&quot;Невідомо&quot;</span>
+  дата_народження <span class="hljs-literal">текст</span> = <span class="hljs-string">&quot;Невідомо&quot;</span>
+  стать <span class="hljs-literal">текст</span> = <span class="hljs-string">&quot;Невідомо&quot;</span>
+<span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<p>Існує можливість абстракції структур шляхом наслідування:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">Д</span><span class="hljs-title class_">окумент</span>
+  номер
+  дата_видачі
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-keyword">структура</span> <span class="hljs-title class_">П</span><span class="hljs-title class_">аспорт</span> <span class="hljs-keyword">є</span> <span class="hljs-title class_">Д</span><span class="hljs-title class_">окумент</span>
+  прізвище
+  імʼя
+  по_батькові
+  дата_народження
+  стать
+<span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<p>Також до структури можна додати дії, які матиме обʼєкт після створення:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-title class_">П</span><span class="hljs-title class_">аспорт</span>.<span class="hljs-title function_">з</span><span class="hljs-title function_">мінити_імʼя</span>(нове_імʼя)
+  <span class="hljs-keyword">я</span>.імʼя = нове_імʼя
+<span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<p>Щоб перевірити чи обʼєкт є певної структури, можна використати слово <code>є</code>:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">мій_паспорт = <span class="hljs-title class_">П</span><span class="hljs-title class_">аспорт</span>(прізвище=<span class="hljs-string">&quot;Когут&quot;</span>,
+                      імʼя=<span class="hljs-string">&quot;David&quot;</span>,
+                      по_батькові=<span class="hljs-string">&quot;Богданович&quot;</span>,
+                      дата_народження=<span class="hljs-string">&quot;10.02.2001&quot;</span>,
+                      стать=<span class="hljs-string">&quot;чоловіча&quot;</span>)
+
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(мій_паспорт <span class="hljs-keyword">є</span> <span class="hljs-title class_">Д</span><span class="hljs-title class_">окумент</span>) <span class="hljs-comment">;; так</span>
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(мій_паспорт <span class="hljs-keyword">є</span> <span class="hljs-title class_">П</span><span class="hljs-title class_">аспорт</span>) <span class="hljs-comment">;; так</span>
+</code></div></pre>
+<hr>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">Г</span><span class="hljs-title class_">риб</span>
+  <span class="hljs-comment">;; опис гриба</span>
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-keyword">структура</span> <span class="hljs-title class_">Г</span><span class="hljs-title class_">олова</span>
+  <span class="hljs-comment">;; опис голови</span>
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-keyword">структура</span> <span class="hljs-title class_">Ш</span><span class="hljs-title class_">ия</span>
+  <span class="hljs-comment">;; опис шиї</span>
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-keyword">структура</span> <span class="hljs-title class_">Т</span><span class="hljs-title class_">улуб</span>
+  <span class="hljs-comment">;; опис тулуба</span>
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-keyword">структура</span> <span class="hljs-title class_">К</span><span class="hljs-title class_">інцівки</span>
+  <span class="hljs-comment">;; опис кінцівок</span>
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-keyword">структура</span> <span class="hljs-title class_">Т</span><span class="hljs-title class_">варина</span>
+  голова <span class="hljs-title class_">Г</span><span class="hljs-title class_">олова</span>
+  шия <span class="hljs-title class_">Ш</span><span class="hljs-title class_">ия</span>
+  тулуб <span class="hljs-title class_">Т</span><span class="hljs-title class_">улуб</span>
+  кінцівки <span class="hljs-title class_">К</span><span class="hljs-title class_">інцівки</span>
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-keyword">структура</span> <span class="hljs-title class_">Л</span><span class="hljs-title class_">юдина</span> <span class="hljs-keyword">є</span> <span class="hljs-title class_">Т</span><span class="hljs-title class_">варина</span>
+  імʼя <span class="hljs-literal">текст</span>
+  свідомість <span class="hljs-literal">логічне</span>
+<span class="hljs-keyword">кінець</span>
+
+адам = <span class="hljs-title class_">Л</span><span class="hljs-title class_">юдина</span>(..., <span class="hljs-string">&quot;Давид&quot;</span>, <span class="hljs-literal">ні</span>)
+<span class="hljs-comment">;; єва = Людина(..., &quot;Діана&quot;, так)</span>
+
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(адам <span class="hljs-keyword">є</span> <span class="hljs-title class_">Л</span><span class="hljs-title class_">юдина</span>) <span class="hljs-comment">;; так</span>
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(адам <span class="hljs-keyword">є</span> <span class="hljs-title class_">Т</span><span class="hljs-title class_">варина</span>) <span class="hljs-comment">;; так</span>
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(адам <span class="hljs-keyword">є</span> <span class="hljs-title class_">Г</span><span class="hljs-title class_">риб</span>) <span class="hljs-comment">;; ні</span>
 </code></div></pre>
 
     <div class="XDocsPageContentBcFw">
       <a data-is-prev="true" href="./виконання-дій.html">Відступ</>
-      <a data-is-next="true" href="./вступ-до-теорії.html">Наступ</>
+      <a data-is-next="true" href="./створення-обʼєктів.html">Наступ</>
     </div>
   </div>
 </div>

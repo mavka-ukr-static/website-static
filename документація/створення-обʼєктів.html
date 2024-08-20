@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Вступ | Документація Мавки</title>
+  <title>Створення обʼєктів | Документація Мавки</title>
 
   <link rel="icon" type="image/svg" href="./ресурси/тема/документація.лого.svg">
 
@@ -23,7 +23,7 @@
 </div>
 <a
   href="./index.html"
-  class="XDocsPageNavigationItem active"
+  class="XDocsPageNavigationItem "
   data-navigation-item="Вступ"
 >
   Вступ
@@ -31,7 +31,7 @@
 <button
   class="XDocsPageNavigationItem"
   data-navigation-item="Практика"
-  data-navigation-item-expanded="false">
+  data-navigation-item-expanded="true">
   Практика
   <span class="XDocsPageNavigationItemArrow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -42,7 +42,7 @@
 <div
   class="XDocsPageNavigationSubmenu"
   data-navigation-submenu="Практика"
-  data-navigation-submenu-shown="false"
+  data-navigation-submenu-shown="true"
 >
   <a
   href="./перша-програма.html"
@@ -81,7 +81,7 @@
 </a>
 <a
   href="./створення-обʼєктів.html"
-  class="XDocsPageNavigationSubmenuItem "
+  class="XDocsPageNavigationSubmenuItem active"
   data-navigation-item="Створення обʼєктів"
 >
   Створення обʼєктів
@@ -205,20 +205,89 @@
   </button>
   <div class="XDocsPageContent">
     
-    <h1>Вступ</h1>
-<p>Мавка є простою, зручною та динамічною мовою програмування
-на основі кириличної абетки, української мови та моєї свідомості.</p>
-<p>Причиною створення Мавки є моє бажання до написання компʼютерних команд українською мовою.</p>
-<p>Мавка присвячується Лесі Українці.</p>
-<p>Я вірю, що кожен українець має право використовувати звичні йому інструменти в щоденному житті.</p>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-title function_">ж</span><span class="hljs-title function_">иття</span>(а, б, в, г)
-  <span class="hljs-title function_">ж</span><span class="hljs-title function_">иття</span>(<span class="hljs-title function_">а</span>(г), <span class="hljs-title function_">б</span>(г), <span class="hljs-title function_">в</span>(г), г)
+    <h1>Створення обʼєктів</h1>
+<p>Записати створення обʼєкта зі структури можна так само як виконання дії:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-title class_">А</span><span class="hljs-title class_">том</span>(ядро=<span class="hljs-title class_">Я</span><span class="hljs-title class_">дро</span>(...), електрони=[...])
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-title class_">К</span><span class="hljs-title class_">нижка</span>(
+  назва=<span class="hljs-string">&quot;Лісова пісня&quot;</span>,
+  автор=<span class="hljs-title class_">А</span><span class="hljs-title class_">втор</span>(псевдо=<span class="hljs-string">&quot;Леся Українка&quot;</span>),
+  жанр=<span class="hljs-string">&quot;драма&quot;</span>
+)
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-title class_">Т</span><span class="hljs-title class_">варина</span>(
+  вид=<span class="hljs-string">&quot;кіт&quot;</span>,
+  імʼя=<span class="hljs-string">&quot;Тимофій&quot;</span>,
+  вік=<span class="hljs-number">2</span>,
+  стать=<span class="hljs-string">&quot;чоловіча&quot;</span>
+)
+</code></div></pre>
+<p>Записати створення числа можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-number">1</span>
+
+<span class="hljs-number">3.14</span>
+
+<span class="hljs-number">0шАБВГҐД</span>
+
+<span class="hljs-number">0д0110101</span>
+
+<span class="hljs-number">-2</span>
+</code></div></pre>
+<p>Записати створення символу можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-string">&#x27;а&#x27;</span>
+
+<span class="hljs-string">&#x27;ї&#x27;</span>
+
+<span class="hljs-string">&#x27;/&#x27;</span>
+
+<span class="hljs-string">&#x27;∑&#x27;</span>
+</code></div></pre>
+<p>Записати створення тексту можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-string">&quot;я ю є&quot;</span>
+
+<span class="hljs-string">&quot;&quot;&quot;Гетьте, думи, ви хмари осінні!&quot;&quot;&quot;</span>
+</code></div></pre>
+<p>Записати створення списку можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">[<span class="hljs-number">1</span>, <span class="hljs-number">3.14</span>, <span class="hljs-number">-2</span>, <span class="hljs-title class_">Л</span><span class="hljs-title class_">юдина</span>(), <span class="hljs-literal">так</span>, <span class="hljs-string">&quot;ого!&quot;</span>]
+</code></div></pre>
+<p>Записати створення словника можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">(<span class="hljs-string">&quot;субʼєкт&quot;</span>=<span class="hljs-string">&quot;змінна&quot;</span>, <span class="hljs-string">&quot;дія&quot;</span>=<span class="hljs-string">&quot;функція&quot;</span>)
+</code></div></pre>
+<p>Записати створення дії можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-title function_">п</span><span class="hljs-title function_">ривіт</span>()
+  <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(<span class="hljs-string">&quot;привіт!&quot;</span>)
+<span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">ще_привіт = <span class="hljs-keyword">дія</span>()
+  <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(<span class="hljs-string">&quot;ще привіт!&quot;</span>)
+<span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">і_ще_привіт = (): <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(<span class="hljs-string">&quot;і ще привіт!&quot;</span>)
+</code></div></pre>
+<p>Записати створення структури можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">А</span><span class="hljs-title class_">том</span>
+  ядро <span class="hljs-title class_">Я</span><span class="hljs-title class_">дро</span>
+  електрони <span class="hljs-literal">список</span>&lt;Електрон&gt;
+<span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<p>Записати створення модуля можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">модуль</span> двигуни
+  <span class="hljs-keyword">структура</span> <span class="hljs-title class_">І</span><span class="hljs-title class_">оннийДвигун</span>
+    <span class="hljs-comment">;; властивості</span>
+  <span class="hljs-keyword">кінець</span>
+
+  <span class="hljs-keyword">структура</span> <span class="hljs-title class_">Р</span><span class="hljs-title class_">еактивнийДвигун</span>
+    <span class="hljs-comment">;; властивості</span>
+  <span class="hljs-keyword">кінець</span>
+
+  <span class="hljs-keyword">дати</span> <span class="hljs-title class_">І</span><span class="hljs-title class_">оннийДвигун</span>
+  <span class="hljs-keyword">дати</span> <span class="hljs-title class_">Р</span><span class="hljs-title class_">еактивнийДвигун</span>
 <span class="hljs-keyword">кінець</span>
 </code></div></pre>
 
     <div class="XDocsPageContentBcFw">
-      
-      <a data-is-next="true" href="./перша-програма.html">Наступ</>
+      <a data-is-prev="true" href="./створення-структур.html">Відступ</>
+      <a data-is-next="true" href="./вступ-до-теорії.html">Наступ</>
     </div>
   </div>
 </div>
