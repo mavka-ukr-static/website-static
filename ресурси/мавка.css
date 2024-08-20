@@ -414,6 +414,54 @@ html:not(.mobile) .MavkaNavigationMobileMenu[data-hidden=false] {
   justify-content: center;
 }
 
+.MavkaNavigationMobileMenuFooter {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 2.5rem;
+  background: rgb(var(--bg-rgb));
+  color: rgb(var(--muted-rgb));
+  border-top: 1px solid rgb(var(--border-rgb));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MavkaNavigationMobileMenuFooter img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.MavkaNavigationMobileMenuFooterConfigButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 2.5rem;
+  background-color: rgb(var(--bg-rgb));
+  color: rgb(var(--muted-rgb));
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.MavkaNavigationMobileMenuFooterConfigButton svg {
+  height: 1rem;
+}
+
+.MavkaNavigationMobileMenuFooterConfigButton:hover {
+  background-color: rgb(var(--hover-rgb));
+}
+
+.MavkaNavigationMobileMenuFooterConfigButton:active {
+  background-color: rgb(var(--pressed-rgb));
+}
+
 .MavkaNavigationMenu {
   position: fixed;
   z-index: 1001;
@@ -450,7 +498,7 @@ html:not(.mobile) .MavkaNavigationMobileMenu[data-hidden=false] {
   text-decoration: none !important;
   display: flex;
   border: none;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
   color: rgb(var(--text-rgb));
   background: transparent;
   font-size: 1rem;

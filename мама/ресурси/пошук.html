@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="xdocs-url-prefix" content="{{PAGE_URL_PREFIX}}">
+
+  <title>{{PAGE_TITLE}}</title>
+
+  <link rel="icon" type="image/svg" href="{{PAGE_FAVICON}}">
+
+  {{PAGE_HEAD}}
+</head>
+<body>
+
+<div class="XDocsSearchPage">
+  <div class="XDocsSearchPageInput">
+    <label>
+      <input type="text" placeholder="Введіть запит">
+    </label>
+    <button>Пошук</button>
+  </div>
+  <div class="XDocsSearchPageResults">
+    <div class="XDocsSearchPageResultsHeader">
+      <span>Результати пошуку</span>
+    </div>
+    <div class="XDocsSearchPageResultsList">
+      <div class="XDocsSearchPageResultsListItem">
+        <a href="#">Посилання на сторінку</a>
+        <p>Опис сторінки</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{PAGE_SCRIPTS}}
+
+<script>
+  const searchData = JSON.parse("[{\"title\":\"МаМа\",\"content\":\"# МаМа\\n\\nМашина Мавки це машина вказівок Мавки.\\n\\n> Сторінка доповнюється.\",\"path\":\"index.html\"},{\"title\":\"Машина\",\"content\":\"# Машина\\n\\n...\",\"path\":\"машина.html\"},{\"title\":\"Виконання дій\",\"content\":\"# Виконання дій\\n\\n...\",\"path\":\"виконання-дій.html\"},{\"title\":\"Утилізація памʼяті\",\"content\":\"# Утилізація памʼяті\\n\\n...\",\"path\":\"утилізація-памʼяті.html\"},{\"title\":\"ВПокластиЧисло\",\"content\":\"# ВПокластиЧисло\\n\\n...\",\"path\":\"ВПокластиЧисло.html\"}]");
+  console.log(searchData);
+</script>
+</body>
+</html>

@@ -39,3 +39,31 @@ document
   .forEach(($toggle) => {
     $toggle.addEventListener("click", toggleMobileNavigation);
   });
+
+document
+  .querySelector(".XDocsPageNavigationSearch button")
+  .addEventListener("click", () => {
+    if (
+      document
+        .querySelector(".XDocsPageNavigationSearch")
+        .classList.contains("open")
+    ) {
+      document
+        .querySelector(".XDocsPageNavigationSearch")
+        .classList.remove("open");
+    } else {
+      document
+        .querySelector(".XDocsPageNavigationSearch")
+        .classList.add("open");
+    }
+  });
+
+document
+  .querySelector(".XDocsPageNavigationSearchIframeWrapper")
+  .addEventListener("click", (event) => {
+    if (event.target === event.currentTarget) {
+      document
+        .querySelector(".XDocsPageNavigationSearch")
+        .classList.remove("open");
+    }
+  });
