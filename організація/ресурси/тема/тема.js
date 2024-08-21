@@ -108,3 +108,123 @@ document.querySelector(".XDocsPageNavigationFooterConfigButton").addEventListene
   }
   checkDarkMode();
 });
+
+document.querySelector(".XDocsPageNavigationSearch button").addEventListener("click", () => {
+  const $searchInput = document.createElement("input");
+  $searchInput.classList.add("XDocsSearchInput");
+  $searchInput.setAttribute("type", "text");
+  $searchInput.setAttribute("placeholder", "Пошук");
+  $searchInput.addEventListener("input", () => {
+    const searchValue = $searchInput.value.trim();
+    window.searchDocs(searchValue).then((result) => {
+      if (result.length === 0) {
+        renderEmpty();
+      } else {
+        renderResult(result);
+      }
+    });
+  });
+  $searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown") {
+      const $firstItem = $searchResults.firstElementChild;
+      if ($firstItem) {
+        $firstItem.focus();
+        e.preventDefault();
+        e.stopPropagation();
+      } else {
+        $searchInput.focus();
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    }
+    if (e.key === "ArrowUp") {
+      const $lastItem = $searchResults.lastElementChild;
+      if ($lastItem) {
+        $lastItem.focus();
+        e.preventDefault();
+        e.stopPropagation();
+      } else {
+        $searchInput.focus();
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    }
+  }, false);
+
+  const $searchResults = document.createElement("div");
+  $searchResults.classList.add("XDocsSearchResults");
+  $searchResults.classList.add("empty");
+  $searchResults.innerHTML = "Введіть запит для пошуку";
+
+  const pathPrefix = document.querySelector("meta[name=\"xdocs-url-prefix\"]").getAttribute("content");
+
+  function renderResult(result) {
+    $searchResults.classList.remove("empty");
+    $searchResults.innerHTML = "";
+    result.forEach((item) => {
+      const $searchResultItem = document.createElement("a");
+      $searchResultItem.classList.add("XDocsSearchResultItem");
+      $searchResultItem.setAttribute("href", pathPrefix + item.path);
+      $searchResultItem.innerHTML = item.title;
+      $searchResults.appendChild($searchResultItem);
+
+      $searchResultItem.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowDown") {
+          const $nextItem = $searchResultItem.nextElementSibling;
+          if ($nextItem) {
+            $nextItem.focus();
+            e.preventDefault();
+            e.stopPropagation();
+          } else {
+            $searchInput.focus();
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        }
+        if (e.key === "ArrowUp") {
+          const $prevItem = $searchResultItem.previousElementSibling;
+          if ($prevItem) {
+            $prevItem.focus();
+            e.preventDefault();
+            e.stopPropagation();
+          } else {
+            $searchInput.focus();
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        }
+      }, false);
+    });
+  }
+
+  function renderEmpty() {
+    $searchResults.classList.add("empty");
+    $searchResults.innerHTML = "Нічого не знайдено";
+  }
+
+  const $searchContainer = document.createElement("div");
+  $searchContainer.classList.add("XDocsSearchContainer");
+  $searchContainer.appendChild($searchInput);
+  $searchContainer.appendChild($searchResults);
+
+  const $searchWrapper = document.createElement("div");
+  $searchWrapper.classList.add("XDocsSearchWrapper");
+  $searchWrapper.appendChild($searchContainer);
+
+  $searchWrapper.addEventListener("click", (e) => {
+    if (e.target === $searchWrapper) {
+      $searchWrapper.remove();
+    }
+  });
+  $searchWrapper.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      $searchWrapper.remove();
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  });
+
+  document.body.appendChild($searchWrapper);
+
+  $searchInput.focus();
+});
