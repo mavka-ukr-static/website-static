@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="xdocs-url-prefix" content="./">
 
-  <title>Вступ до Бібліотеки | Документація Мавки</title>
+  <title>Запис повторів | Документація Мавки</title>
 
   <link rel="icon" type="image/svg" href="./ресурси/тема/документація.лого.svg">
 
@@ -36,7 +36,7 @@
 <button
   class="XDocsPageNavigationItem"
   data-navigation-item="Практика"
-  data-navigation-item-expanded="false">
+  data-navigation-item-expanded="true">
   Практика
   <span class="XDocsPageNavigationItemArrow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -47,7 +47,7 @@
 <div
   class="XDocsPageNavigationSubmenu"
   data-navigation-submenu="Практика"
-  data-navigation-submenu-shown="false"
+  data-navigation-submenu-shown="true"
 >
   <a
   href="./перша-програма.html"
@@ -135,7 +135,7 @@
 </a>
 <a
   href="./запис-повторів.html"
-  class="XDocsPageNavigationSubmenuItem "
+  class="XDocsPageNavigationSubmenuItem active"
   data-navigation-item="Запис повторів"
 >
   Запис повторів
@@ -217,7 +217,7 @@
 <button
   class="XDocsPageNavigationItem"
   data-navigation-item="Бібліотека"
-  data-navigation-item-expanded="true">
+  data-navigation-item-expanded="false">
   Бібліотека
   <span class="XDocsPageNavigationItemArrow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -228,11 +228,11 @@
 <div
   class="XDocsPageNavigationSubmenu"
   data-navigation-submenu="Бібліотека"
-  data-navigation-submenu-shown="true"
+  data-navigation-submenu-shown="false"
 >
   <a
   href="./вступ-до-бібліотеки.html"
-  class="XDocsPageNavigationSubmenuItem active"
+  class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="Вступ до Бібліотеки"
 >
   Вступ до Бібліотеки
@@ -295,10 +295,23 @@
   </button>
   <div class="XDocsPageContent">
     
-    
+    <h1>Запис повторів</h1>
+<p>Записати повтор з умовою в <subject>Мавці</subject> можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">х = <span class="hljs-number">0</span>
+<span class="hljs-keyword">поки</span> х &lt; <span class="hljs-number">10</span>
+  <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(х)
+  х += <span class="hljs-number">1</span>
+<span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<p>Записати цикл можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">цикл</span> х = <span class="hljs-number">0</span>, х &lt; <span class="hljs-number">10</span>, х += <span class="hljs-number">1</span>
+  <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(х)
+<span class="hljs-keyword">кінець</span>
+</code></div></pre>
+
     <div class="XDocsPageContentBcFw">
-      <a data-is-prev="true" href="./середовище.html">Відступ</>
-      <a data-is-next="true" href="./бібліотека-математика.html">Наступ</>
+      <a data-is-prev="true" href="./запис-умов.html">Відступ</>
+      <a data-is-next="true" href="./запис-переборів.html">Наступ</>
     </div>
   </div>
 </div>
