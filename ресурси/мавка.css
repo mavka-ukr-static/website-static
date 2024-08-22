@@ -580,6 +580,7 @@ html.mobile .MavkaHomeHero {
 
 .MavkaHomeHeroLeft {
   margin-top: 2rem;
+  z-index: 1;
 }
 
 .MavkaHomeHeroTitle {
@@ -588,6 +589,7 @@ html.mobile .MavkaHomeHero {
   font-size: 2.6em;
   font-weight: 600;
   line-height: 1.125;
+  z-index: 1;
 
   max-width: 15ch;
 }
@@ -601,6 +603,7 @@ html.mobile .MavkaHomeHero {
   color: rgb(var(--muted-rgb));
 
   max-width: 33ch;
+  z-index: 1;
 
   font-weight: 300;
 }
@@ -952,4 +955,14 @@ html.mobile .MavkaHomeAtomContainer {
   padding: 10rem 1rem 2rem 1rem;
   text-align: center;
   color: rgb(var(--muted-rgb))
+}
+
+subject, .MavkaTextSubject {
+  color: #485cb0;
+  font-weight: 500;
+}
+
+keyword, .MavkaTextKeyword {
+  color: #c678dd;
+  font-weight: 500;
 }
