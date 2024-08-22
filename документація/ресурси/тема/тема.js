@@ -228,3 +228,8 @@ document.querySelector(".XDocsPageNavigationSearch button").addEventListener("cl
 
   $searchInput.focus();
 });
+
+const $spaceBeforeFooterWrapper = document.createElement("div");
+$spaceBeforeFooterWrapper.classList.add("XDocsPageNavigationFooterWrapperSpaceBefore");
+
+document.querySelector(".XDocsPageNavigationFooterWrapper").insertAdjacentElement("beforebegin", $spaceBeforeFooterWrapper);

@@ -97,6 +97,10 @@ pre, code {
   font-weight: 500;
 }
 
+a {
+  color: rgb(var(--text-rgb));
+}
+
 subject, .XDocsTextSubject {
   color: #485cb0;
   font-weight: 500;
@@ -164,6 +168,9 @@ html.mobile .XDocsPage .XDocsPageNavigation {
   width: 50px;
   height: 50px;
 }
+.XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooterWrapperSpaceBefore {
+  min-height: 7.5rem;
+}
 .XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooterWrapper {
   margin-top: auto;
   position: sticky;
@@ -171,12 +178,6 @@ html.mobile .XDocsPage .XDocsPageNavigation {
   right: 0;
   bottom: 0;
   left: 0;
-}
-.XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooterWrapper::before {
-  content: "";
-  width: 100%;
-  min-height: 7.5rem;
-  display: block;
 }
 .XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter {
   position: relative;
@@ -568,6 +569,7 @@ hr.table {
   color: rgb(var(--text-rgb));
   box-shadow: var(--code-shadow);
   border-radius: 1rem;
+  overflow: hidden;
 }
 .XDocsSearchWrapper .XDocsSearchContainer input {
   border-top-left-radius: 1rem;
@@ -613,14 +615,14 @@ hr.table {
   text-decoration: none;
   outline: none;
 }
+.XDocsSearchResults a:focus {
+  background-color: rgb(var(--hover-rgb));
+}
 .XDocsSearchResults a:hover {
   background-color: rgb(var(--hover-rgb));
 }
 .XDocsSearchResults a:active {
   background-color: rgb(var(--pressed-rgb));
-}
-.XDocsSearchResults a:focus {
-  background-color: rgb(var(--hover-rgb));
 }
 .XDocsSearchResults a:last-child {
   border-bottom-left-radius: 1rem;
