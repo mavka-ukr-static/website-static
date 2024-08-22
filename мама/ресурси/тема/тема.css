@@ -58,6 +58,8 @@ html {
   font-family: Rubik, sans-serif;
   background: rgb(var(--bg-rgb));
   color: rgb(var(--text-rgb));
+  font-feature-settings: "liga" 0;
+  font-variant-ligatures: none;
 }
 
 html.dark {
