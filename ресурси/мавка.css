@@ -612,7 +612,7 @@ html.mobile .MavkaHomeHero {
   margin-top: 2.5rem;
 
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .MavkaHomeHeroButton + .MavkaHomeHeroButton {
@@ -626,9 +626,10 @@ html.mobile .MavkaHomeHero {
   background: rgb(var(--text-rgb));
   color: rgb(var(--bg-rgb));
   text-decoration: none;
+  height: 50px;
   border: none;
   font-weight: 500;
-  padding: 0.8rem 1.6rem;
+  padding: 0 1.6rem;
   border-radius: 0.8rem;
   font-size: 1.2rem;
   display: flex;
@@ -664,6 +665,23 @@ html.mobile .MavkaHomeHero {
 .MavkaHomeHeroButton.small {
   padding: 0.5rem 1rem;
   font-size: 1rem;
+}
+
+.MavkaHomeHeroButton.white {
+  padding: 0;
+  width: 50px;
+  background: rgb(var(--bg-rgb));
+  color: rgb(var(--text-rgb));
+  background: transparent;
+}
+
+.MavkaHomeHeroButton.white svg {
+  margin-left: 0;
+  height: 50px;
+}
+
+.MavkaHomeHeroButton.white:active svg {
+  transform: scale(0.8);
 }
 
 .MavkaHomeHeroRight {
