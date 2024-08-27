@@ -193,6 +193,11 @@ html.mobile .XDocsPage .XDocsPageNavigation {
   align-items: center;
   justify-content: center;
 }
+.XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 html.mobile .XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter {
   right: 0;
   bottom: 0;
