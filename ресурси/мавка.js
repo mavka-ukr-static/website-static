@@ -102,6 +102,12 @@ window.addEventListener("click", (event) => {
   }
 });
 
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    hideMenu();
+  }
+});
+
 function enableDarkMode() {
   document.documentElement.classList.add("dark");
 }

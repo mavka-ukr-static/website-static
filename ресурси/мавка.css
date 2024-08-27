@@ -97,7 +97,7 @@ html.transitions {
   --transition-duration: 125ms;
 }
 
-html.dark img:not(.no-dark-shadow), html.dark svg:not(.no-dark-shadow) {
+html.dark img:not(.no-dark-shadow), html.dark svg:not(.no-dark-shadow), .image-dark-shadow {
   filter: drop-shadow(0 0 1px white);
 }
 
@@ -579,8 +579,11 @@ html.mobile .MavkaHomeHero {
 }
 
 .MavkaHomeHeroLeft {
-  margin-top: 2rem;
+  margin-top: 1rem;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .MavkaHomeHeroTitle {
@@ -590,6 +593,7 @@ html.mobile .MavkaHomeHero {
   font-weight: 600;
   line-height: 1.125;
   z-index: 1;
+  text-align: right;
 
   max-width: 15ch;
 }
@@ -599,17 +603,31 @@ html.mobile .MavkaHomeHero {
 
   font-size: 1.125rem;
   line-height: 1.25;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   color: rgb(var(--muted-rgb));
 
   max-width: 33ch;
   z-index: 1;
 
   font-weight: 300;
+  text-align: right;
+}
+
+html.mobile .MavkaHomeHeroLeft {
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+html.mobile .MavkaHomeHeroTitle {
+  text-align: left;
+}
+
+html.mobile .MavkaHomeHeroSubtitle {
+  text-align: left;
 }
 
 .MavkaHomeHeroButtons {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 
   display: flex;
   align-items: flex-end;
@@ -669,6 +687,8 @@ html.mobile .MavkaHomeHero {
 .MavkaHomeHeroRight {
   margin-top: -0.5rem;
   max-width: 446px;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 .MavkaHomeHeroCodeBlockWrapper {
@@ -712,7 +732,7 @@ html.mobile .MavkaHomeHeroCodeBlock {
   transition: all var(--transition-duration) ease-in-out;
 }
 
-.MavkaHomeHeroCodeBlockButton img {
+.MavkaHomeHeroCodeBlockButton img, .MavkaHomeHeroCodeBlockButton svg {
   margin-right: 0.33rem;
   height: 1em;
 }
