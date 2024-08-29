@@ -387,20 +387,18 @@
   <div class="XDocsPageContent">
     
     <h1>Визначення субʼєктів</h1>
-<p>Записати визначення субʼєкта в <subject>Мавці</subject> можна використовуючи слово <code>=</code> <keyword>або</keyword> <code>це</code>.
-Спочатку вказуємо сам субʼєкт, <keyword>і</keyword>, через слово, обʼєкт. Наприклад:</p>
+<p>Записати визначення субʼєкта в <subject>Мавці</subject> можна використовуючи слово <code>=</code> <keyword>або</keyword> <code>це</code>:</p>
 <pre><div class="XDocsCodeWrapper"><code class="hljs">кіт_моєї_сестри = <span class="hljs-title class_">К</span><span class="hljs-title class_">іт</span>(імʼя=<span class="hljs-string">&quot;Тимофій&quot;</span>)
 </code></div></pre>
 <pre><div class="XDocsCodeWrapper"><code class="hljs">число_пі = <span class="hljs-number">3.14</span>
 дві_третини = <span class="hljs-number">2</span> / <span class="hljs-number">3</span>
 Е = м * к ** <span class="hljs-number">2</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-literal">ніщо</span> <span class="hljs-keyword">це</span> <span class="hljs-title class_">Р</span><span class="hljs-title class_">акета</span>(...)
+<pre><div class="XDocsCodeWrapper"><code class="hljs">ніщо <span class="hljs-keyword">це</span> <span class="hljs-title class_">Р</span><span class="hljs-title class_">акета</span>(...)
 паспорт <span class="hljs-keyword">це</span> <span class="hljs-title class_">Д</span><span class="hljs-title class_">окумент</span>(...)
 мавка <span class="hljs-keyword">це</span> <span class="hljs-title class_">М</span><span class="hljs-title class_">ашинаВказівок</span>(...)
 </code></div></pre>
-<p>Звернутись можна до субʼєкта з поточного середовища <keyword>або</keyword> з батьківського.
-Наприклад:</p>
+<p>Звернутись можна до субʼєкта, що визначений в поточному середовищі <keyword>або</keyword> в батьківському:</p>
 <pre><div class="XDocsCodeWrapper"><code class="hljs">а = <span class="hljs-number">2</span>
 
 <span class="hljs-keyword">дія</span> <span class="hljs-title function_">ф</span>()
@@ -413,7 +411,7 @@
 <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(а) <span class="hljs-comment">;; 2</span>
 <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(б) <span class="hljs-comment">;; помилка</span>
 </code></div></pre>
-<p>Визначити субʼєкт у батьківському середовищі можна використовуючи слово <code>:=</code>. Наприклад:</p>
+<p>Визначити субʼєкт у батьківському середовищі можна використовуючи слово <code>:=</code>:</p>
 <pre><div class="XDocsCodeWrapper"><code class="hljs">а = <span class="hljs-number">2</span>
 
 <span class="hljs-keyword">дія</span> <span class="hljs-title function_">ф</span>()
