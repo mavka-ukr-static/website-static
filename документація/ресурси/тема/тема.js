@@ -233,3 +233,11 @@ const $spaceBeforeFooterWrapper = document.createElement("div");
 $spaceBeforeFooterWrapper.classList.add("XDocsPageNavigationFooterWrapperSpaceBefore");
 
 document.querySelector(".XDocsPageNavigationFooterWrapper").insertAdjacentElement("beforebegin", $spaceBeforeFooterWrapper);
+
+const $activeMenuItem = document.querySelector(".XDocsPageNavigation .active");
+
+if ($activeMenuItem && $activeMenuItem.scrollIntoView) {
+  $activeMenuItem.scrollIntoView({
+    block: "center"
+  });
+}
