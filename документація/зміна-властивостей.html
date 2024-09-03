@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="xdocs-url-prefix" content="./">
 
-  <title>Розширення | Документація Мавки</title>
+  <title>Зміна властивостей | Документація Мавки</title>
 
   <link rel="icon" type="image/svg" href="./ресурси/тема/документація.лого.svg">
 
@@ -100,7 +100,7 @@
 </a>
 <a
   href="./зміна-властивостей.html"
-  class="XDocsPageNavigationSubmenuItem "
+  class="XDocsPageNavigationSubmenuItem active"
   data-navigation-item="Зміна властивостей"
 >
   Зміна властивостей
@@ -247,7 +247,7 @@
 </a>
 <a
   href="./розширення.html"
-  class="XDocsPageNavigationSubmenuItem active"
+  class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="Розширення"
 >
   Розширення
@@ -431,14 +431,26 @@
   </button>
   <div class="XDocsPageContent">
     
-    <h1>Розширення</h1>
-<p><subject>Мавка</subject> має експериментальну можливість розширення через <subject>Ціль</subject>.</p>
-<p>Отримати приклад <subject>Розширення Мавки</subject> можна
-в <subject><a href="https://xn--80ae5bu9f.xn--80aaf6ah.xn--j1amh">Архіві Мавки</a></subject>.</p>
+    <h1>Зміна властивостей</h1>
+<p>Змінити властивість обʼєкта в <subject>Мавці</subject> можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">якийсь_обʼєкт.якась_властивість = <span class="hljs-string">&quot;Що це?&quot;</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">якийсь_обʼєкт.якась_властивість.ще_якась_властивість = <span class="hljs-number">3.21</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">Я</span><span class="hljs-title class_">касьСтруктура</span>
+  якась_властивість
+<span class="hljs-keyword">кінець</span>
+
+якийсь_обʼєкт = <span class="hljs-title class_">Я</span><span class="hljs-title class_">касьСтруктура</span>(<span class="hljs-string">&quot;Ого...&quot;</span>)
+
+якийсь_обʼєкт.якась_властивість = <span class="hljs-string">&quot;Змінено!&quot;</span>
+
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(якийсь_обʼєкт.якась_властивість)
+</code></div></pre>
 
     <div class="XDocsPageContentBcFw">
-      <a data-is-prev="true" href="./діалог.html">Відступ</>
-      <a data-is-next="true" href="./вступ-до-теорії.html">Наступ</>
+      <a data-is-prev="true" href="./отримання-властивостей.html">Відступ</>
+      <a data-is-next="true" href="./створення-модулів.html">Наступ</>
     </div>
   </div>
 </div>
