@@ -462,8 +462,10 @@
   gtag("config", "G-0PFF0HTWKB");
 </script>
 <script>
-  window.addEventListener("DOMContentLoaded", function() {
-    document.documentElement.classList.add("loaded");
+  window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      document.documentElement.classList.add("loaded");
+    }, 500);
   });
 </script>
 </body>
