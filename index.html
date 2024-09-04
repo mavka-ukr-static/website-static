@@ -448,16 +448,18 @@
 </div>
 
 <script src="./ресурси/мавка.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PFF0HTWKB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
-<!--<script>-->
-<!--  if (window.location.protocol !== "file:") {-->
-<!--    document.addEventListener("turbolinks:load", () => {-->
-<!--      Turbolinks.start();-->
-<!--    });-->
-<!--    const turbolinksScript = document.createElement("script");-->
-<!--    turbolinksScript.src = "./ресурси/turbolinks.min.js";-->
-<!--    document.head.appendChild(turbolinksScript);-->
-<!--  }-->
-<!--</script>-->
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+
+  gtag("config", "G-0PFF0HTWKB");
+</script>
 </body>
 </html>
