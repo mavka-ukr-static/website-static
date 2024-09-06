@@ -276,7 +276,7 @@ html.mobile .MavkaNavigationLinks {
   margin-right: 0;
 }
 
-.MavkaNavigationLink.icon-only .MavkaNavigationLinkIcon > img, .MavkaNavigationLink.icon-only .MavkaNavigationLinkIcon > svg {
+.MavkaNavigationLink.icon-only:not(.normal-size) .MavkaNavigationLinkIcon > img, .MavkaNavigationLink.icon-only:not(.normal-size) .MavkaNavigationLinkIcon > svg {
   height: 1.5rem;
 }
 
@@ -396,6 +396,10 @@ html:not(.mobile) .MavkaNavigationMobileMenu[data-hidden=false] {
   display: flex;
   align-content: center;
   justify-content: center;
+
+  &.yellow {
+    background: yellow;
+  }
 }
 
 .MavkaNavigationMobileMenuItemRusted svg {
@@ -550,6 +554,10 @@ html:not(.mobile) .MavkaNavigationMobileMenu[data-hidden=false] {
   display: flex;
   align-content: center;
   justify-content: center;
+
+  &.yellow {
+    background: yellow;
+  }
 }
 
 .MavkaNavigationMenuItemRusted svg {
