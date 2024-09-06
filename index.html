@@ -350,7 +350,7 @@
   <span class="hljs-keyword">кінець</span>,
   <span class="hljs-title class_">О</span><span class="hljs-title class_">пції</span>(порт=<span class="hljs-number">8080</span>),
   (): <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(<span
-              class="hljs-string">"Сервер запущено на http://localhost:8080!"</span>)
+              class="hljs-string">"Сервер запущено на 0.0.0.0:8080!"</span>)
 )</code></pre>
 
           <pre data-request-code="true" data-code-active="false"><code class="hljs мавка"><span
@@ -359,8 +359,8 @@
 <span class="hljs-keyword">взяти</span> <span class="hljs-keyword">пак</span> запит
 
 <span class="hljs-keyword">чекати</span> відповідь = запит.<span class="hljs-title function_">н</span><span
-              class="hljs-title function_">адіслати</span>(урл=<span
-              class="hljs-string">"https://мавка.укр/машини"</span>)
+              class="hljs-title function_">адіслати</span>(<span
+              class="hljs-string">"0.0.0.0:8080/машини"</span>)
 машини = дід.<span class="hljs-title function_">р</span><span class="hljs-title function_">озібрати</span>&lt;<span
               class="hljs-literal">список</span>&lt;<span
               class="hljs-literal">текст</span>&gt;&gt;(<span
