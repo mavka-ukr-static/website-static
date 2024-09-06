@@ -336,6 +336,13 @@
   Структура
 </a>
 <a
+  href="./пусто-це.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="пусто"
+>
+  пусто
+</a>
+<a
   href="./число-це.html"
   class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="число"
@@ -504,9 +511,25 @@
     <h1>словник</h1>
 <p><code>словник</code> <keyword>це</keyword> батьківська <keyword>структура</keyword> для всіх словників <subject>Мавки</subject>.</p>
 <p><code>словник</code> описує такі властивості для своїх обʼєктів:</p>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">с</span><span class="hljs-title class_">ловник</span>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">с</span><span class="hljs-title class_">ловник</span>&lt;В, З&gt;
   розмір <span class="hljs-literal">число</span>
 <span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">в</span><span class="hljs-title function_">изначення</span>() <span class="hljs-literal">список</span>&lt;В&gt;
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">з</span><span class="hljs-title function_">начення</span>() <span class="hljs-literal">список</span>&lt;З&gt;
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">в</span><span class="hljs-title function_">идалити</span>(визначення В) <span class="hljs-literal">логічне</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">о</span><span class="hljs-title function_">чистити</span>() <span class="hljs-literal">словник</span>&lt;В, З&gt;
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_містить</span>(визначення В) <span class="hljs-literal">логічне</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_отримати</span>(визначення В) З
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_покласти</span>(визначення В, значення З) З
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_перебір</span>() <span class="hljs-literal">перебір</span>&lt;В&gt;
 </code></div></pre>
 
     <div class="XDocsPageContentBcFw">

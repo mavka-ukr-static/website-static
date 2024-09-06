@@ -336,6 +336,13 @@
   Структура
 </a>
 <a
+  href="./пусто-це.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="пусто"
+>
+  пусто
+</a>
+<a
   href="./число-це.html"
   class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="число"
@@ -502,7 +509,20 @@
   <div class="XDocsPageContent">
     
     <h1>Праця з паками</h1>
-<p><keyword>Взяти</keyword> <keyword>модуль</keyword> з паків:</p>
+<p>Паки зберігаються в теці <code>паки</code> в корені проекту:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">паки/
+├─ привіт/
+│  ├─ привіт.м
+старт.м
+</code></div></pre>
+<p>Головний <keyword>Модуль<keyword> <code>привіт.м</code> пака:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-title function_">п</span><span class="hljs-title function_">ривіт</span>()
+  <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(<span class="hljs-string">&quot;Привіт від Лесі!&quot;</span>)
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-keyword">дати</span> <span class="hljs-title label_">п</span><span class="hljs-title label_">ривіт</span>
+</code></div></pre>
+<p><code>старт.м</code>:</p>
 <pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">взяти</span> <span class="hljs-keyword">пак</span> привіт
 
 привіт.<span class="hljs-title function_">п</span><span class="hljs-title function_">ривіт</span>()
