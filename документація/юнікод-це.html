@@ -7,9 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="xdocs-url-prefix" content="./">
 
-  <meta name="description" content="Умови якщо в Мавці">
+  <meta name="description" content="юнікод це батьківська структура для всіх юнікодів Мавки.">
 
-  <title>Запис умов | Документація Мавки</title>
+  <title>юнікод | Документація Мавки</title>
 
   <link rel="icon" type="image/svg" href="./ресурси/тема/документація.лого.svg">
 
@@ -38,7 +38,7 @@
 <button
   class="XDocsPageNavigationItem"
   data-navigation-item="Практика"
-  data-navigation-item-expanded="true">
+  data-navigation-item-expanded="false">
   Практика
   <span class="XDocsPageNavigationItemArrow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -49,7 +49,7 @@
 <div
   class="XDocsPageNavigationSubmenu"
   data-navigation-submenu="Практика"
-  data-navigation-submenu-shown="true"
+  data-navigation-submenu-shown="false"
 >
   <a
   href="./перша-програма.html"
@@ -200,7 +200,7 @@
 </a>
 <a
   href="./запис-умов.html"
-  class="XDocsPageNavigationSubmenuItem active"
+  class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="Запис умов"
 >
   Запис умов
@@ -317,7 +317,7 @@
 <button
   class="XDocsPageNavigationItem"
   data-navigation-item="Визначення"
-  data-navigation-item-expanded="false">
+  data-navigation-item-expanded="true">
   Визначення
   <span class="XDocsPageNavigationItemArrow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -328,7 +328,7 @@
 <div
   class="XDocsPageNavigationSubmenu"
   data-navigation-submenu="Визначення"
-  data-navigation-submenu-shown="false"
+  data-navigation-submenu-shown="true"
 >
   <a
   href="./обʼєкт-це.html"
@@ -367,7 +367,7 @@
 </a>
 <a
   href="./юнікод-це.html"
-  class="XDocsPageNavigationSubmenuItem "
+  class="XDocsPageNavigationSubmenuItem active"
   data-navigation-item="юнікод"
 >
   юнікод
@@ -524,18 +524,38 @@
   </button>
   <div class="XDocsPageContent">
     
-    <h1>Запис умов</h1>
-<p>Записати умову в <subject>Мавці</subject> можна так:</p>
-<pre><div class="XDocsCodeWrapper"><code class="hljs">а = <span class="hljs-number">10</span>
-
-<span class="hljs-keyword">якщо</span> а == <span class="hljs-number">10</span>
-  <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(<span class="hljs-string">&quot;а рівно 10&quot;</span>)
+    <h1>юнікод</h1>
+<p><code>юнікод</code> <keyword>це</keyword> батьківська <keyword>структура</keyword> для всіх юнікодів <subject>Мавки</subject>.</p>
+<p><code>юнікод</code> використовує кодування UTF-32.</p>
+<p><code>юнікод</code> описує такі властивості для своїх обʼєктів:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">ю</span><span class="hljs-title class_">нікод</span>
+  довжина <span class="hljs-literal">число</span>
 <span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> юнікод.<span class="hljs-title function_">р</span><span class="hljs-title function_">озбити</span>(дільник юнікод) <span class="hljs-literal">список</span>&lt;юнікод&gt;
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> юнікод.<span class="hljs-title function_">з</span><span class="hljs-title function_">амінити</span>(старе юнікод, нове юнікод) юнікод
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> юнікод.<span class="hljs-title function_">п</span><span class="hljs-title function_">очинається</span>(значення юнікод) <span class="hljs-literal">логічне</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> юнікод.<span class="hljs-title function_">з</span><span class="hljs-title function_">акінчується</span>(значення юнікод) <span class="hljs-literal">логічне</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> юнікод.<span class="hljs-title function_">о</span><span class="hljs-title function_">бтяти</span>() юнікод
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> юнікод.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_додати</span>(значення юнікод) юнікод
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> юнікод.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_містить</span>(значення юнікод) <span class="hljs-literal">логічне</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> юнікод.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_отримати</span>(позиція <span class="hljs-literal">число</span>) <span class="hljs-literal">число</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> юнікод.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_перебір</span>() <span class="hljs-literal">перебір</span>&lt;<span class="hljs-literal">число</span>&gt;
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> юнікод.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_число</span>() <span class="hljs-literal">число</span>
 </code></div></pre>
 
     <div class="XDocsPageContentBcFw">
-      <a data-is-prev="true" href="./чародії.html">Відступ</a>
-      <a data-is-next="true" href="./запис-повторів.html">Наступ</a >
+      <a data-is-prev="true" href="./текст-це.html">Відступ</a>
+      <a data-is-next="true" href="./логічне-це.html">Наступ</a >
     </div>
   </div>
 </div>
