@@ -151,13 +151,6 @@
   Створення словників
 </a>
 <a
-  href="./створення-шаблонів.html"
-  class="XDocsPageNavigationSubmenuItem "
-  data-navigation-item="Створення шаблонів"
->
-  Створення шаблонів
-</a>
-<a
   href="./логічне.html"
   class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="Логічне"
@@ -528,33 +521,33 @@
     <h1>список</h1>
 <p><code>список</code> <keyword>це</keyword> батьківська <keyword>структура</keyword> для всіх списків <subject>Мавки</subject>.</p>
 <p><code>список</code> описує такі властивості для своїх обʼєктів:</p>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">с</span><span class="hljs-title class_">писок</span>&lt;Т&gt;
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">с</span><span class="hljs-title class_">писок</span>
   довжина <span class="hljs-literal">число</span>
 <span class="hljs-keyword">кінець</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">д</span><span class="hljs-title function_">одати</span>(значення Т) <span class="hljs-literal">число</span>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">д</span><span class="hljs-title function_">одати</span>(значення) <span class="hljs-literal">число</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">з</span><span class="hljs-title function_">абрати</span>() Т
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">з</span><span class="hljs-title function_">абрати</span>()
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">ф</span><span class="hljs-title function_">ільтр</span>(д <span class="hljs-title class_">Д</span><span class="hljs-title class_">ія</span>) <span class="hljs-literal">список</span>&lt;Т&gt;
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">ф</span><span class="hljs-title function_">ільтр</span>(д <span class="hljs-title class_">Д</span><span class="hljs-title class_">ія</span>) <span class="hljs-literal">список</span>
 </code></div></pre>
 <pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">з</span><span class="hljs-title function_">найти</span>(д <span class="hljs-title class_">Д</span><span class="hljs-title class_">ія</span>) Т
 </code></div></pre>
 <pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">з</span><span class="hljs-title function_">найти_позицію</span>(д <span class="hljs-title class_">Д</span><span class="hljs-title class_">ія</span>) <span class="hljs-literal">число</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">п</span><span class="hljs-title function_">еретворити</span>&lt;НТ&gt;(д <span class="hljs-title class_">Д</span><span class="hljs-title class_">ія</span>) <span class="hljs-literal">список</span>&lt;НТ&gt;
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">п</span><span class="hljs-title function_">еретворити</span>(д <span class="hljs-title class_">Д</span><span class="hljs-title class_">ія</span>) <span class="hljs-literal">список</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">о</span><span class="hljs-title function_">бернути</span>() <span class="hljs-literal">список</span>&lt;Т&gt;
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">о</span><span class="hljs-title function_">бернути</span>() <span class="hljs-literal">список</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">з</span><span class="hljs-title function_">різ</span>(від <span class="hljs-literal">число</span>, до ?<span class="hljs-literal">число</span> = <span class="hljs-literal">пусто</span>) <span class="hljs-literal">список</span>&lt;Т&gt;
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">з</span><span class="hljs-title function_">різ</span>(від <span class="hljs-literal">число</span>, до <span class="hljs-literal">число</span>|<span class="hljs-literal">пусто</span> = <span class="hljs-literal">пусто</span>) <span class="hljs-literal">список</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_містить</span>(значення Т) <span class="hljs-literal">логічне</span>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_містить</span>(значення) <span class="hljs-literal">логічне</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_отримати</span>(позиція <span class="hljs-literal">число</span>) Т
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_отримати</span>(позиція <span class="hljs-literal">число</span>)
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_покласти</span>(позиція <span class="hljs-literal">число</span>, значення Т) Т
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_покласти</span>(позиція <span class="hljs-literal">число</span>, значення)
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_перебір</span>() <span class="hljs-literal">перебір</span>&lt;Т&gt;
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">список</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_перебір</span>() <span class="hljs-literal">перебір</span>
 </code></div></pre>
 
     <div class="XDocsPageContentBcFw">
