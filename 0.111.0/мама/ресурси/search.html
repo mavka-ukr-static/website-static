@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="xdocs-url-prefix" content="{{PAGE_URL_PREFIX}}">
+</head>
+<body>
+
+<script>
+  const searchData = JSON.parse("[{\"title\":\"МаМа\",\"content\":\"# МаМа\\n\\n<subject>Машина Мавки</subject> <keyword>це</keyword> машина вказівок <subject>Мавки</subject>.\\n\\n> Сторінка доповнюється.\",\"path\":\"index.html\"},{\"title\":\"Машина\",\"content\":\"# Машина\\n\\n...\",\"path\":\"машина.html\"},{\"title\":\"Виконання дій\",\"content\":\"# Виконання дій\\n\\n...\",\"path\":\"виконання-дій.html\"},{\"title\":\"Утилізація памʼяті\",\"content\":\"# Утилізація памʼяті\\n\\n...\",\"path\":\"утилізація-памʼяті.html\"},{\"title\":\"Додати\",\"content\":\"# Додати\\n\\n`Додати` це вказівка Машини Мавки, що сумує два останні обʼєкти зі стопки та кладе результат на стопку.\\n\\n## Опис\\n\\n`Додати` виконує дію `чародія_додати` від першого обʼєкта щодо другого обʼєкта. Результат виконання цієї дії кладеться\\nна стопку.\\n\\n## Протокол\\n\\n1. Покласти перший (лівий) обʼєкт на стопку.\\n2. Покласти другий (правий) обʼєкт на стопку.\\n3. `Додати`.\\n\\n## Втілення\\n\\nПсевдокод втілення в МаМа:\\n\\n```ціль\\nціль б = забрати_зі_стопки();\\nціль а = забрати_зі_стопки();\\nціль р = а.чародія_додати(б);\\nякщо р == падіння {\\n  // ...обробка падіння...\\n} інакше {\\n  покласти_на_стопку(р);\\n}\\n```\\n\\n## Приклад\\n\\n```мавка\\nа + б\\n```\\n\\n```\\nЗвернутись а\\nЗвернутись б\\nДодати\\n```\",\"path\":\"ВДодати.html\"}]");
+
+  window.addEventListener("message", (event) => {
+    const eventData = event.data;
+    const eventId = eventData.id;
+    const eventType = eventData.type;
+    if (eventType === "search") {
+      const query = eventData.query;
+      const results = searchData.filter((item) => {
+        return item.title.toLowerCase().includes(query.toLowerCase());
+      });
+      window.parent.postMessage(
+        {
+          id: eventId,
+          result: results
+        },
+        "*"
+      );
+    }
+  });
+</script>
+</body>
+</html>

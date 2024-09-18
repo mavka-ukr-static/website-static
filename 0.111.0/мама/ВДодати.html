@@ -9,7 +9,7 @@
 
   <meta name="description" content="">
 
-  <title>Утилізація памʼяті | Машина Мавки</title>
+  <title>Додати | Машина Мавки</title>
 
   <link rel="icon" type="image/png" href="./ресурси/тема/мама.лого.png" />
   <link rel="icon" sizes="any" type="image/svg+xml" href="./ресурси/тема/мама.лого.svg">
@@ -52,7 +52,7 @@
 </a>
 <a
   href="./утилізація-памʼяті.html"
-  class="XDocsPageNavigationItem active"
+  class="XDocsPageNavigationItem "
   data-navigation-item="Утилізація памʼяті"
 >
   Утилізація памʼяті
@@ -60,7 +60,7 @@
 <button
   class="XDocsPageNavigationItem"
   data-navigation-item="Вказівки"
-  data-navigation-item-expanded="false">
+  data-navigation-item-expanded="true">
   Вказівки
   <span class="XDocsPageNavigationItemArrow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -71,14 +71,14 @@
 <div
   class="XDocsPageNavigationSubmenu"
   data-navigation-submenu="Вказівки"
-  data-navigation-submenu-shown="false"
+  data-navigation-submenu-shown="true"
 >
   <a
-  href="./ВПокластиЧисло.html"
-  class="XDocsPageNavigationSubmenuItem "
-  data-navigation-item="ВПокластиЧисло"
+  href="./ВДодати.html"
+  class="XDocsPageNavigationSubmenuItem active"
+  data-navigation-item="Додати"
 >
-  ВПокластиЧисло
+  Додати
 </a>
 </div>
 <div class="XDocsPageNavigationFooterWrapper">
@@ -100,12 +100,39 @@
   </button>
   <div class="XDocsPageContent">
     
-    <h1>Утилізація памʼяті</h1>
-<p>...</p>
+    <h1>Додати</h1>
+<p><code>Додати</code> це вказівка Машини Мавки, що сумує два останні обʼєкти зі стопки та кладе результат на стопку.</p>
+<h2>Опис</h2>
+<p><code>Додати</code> виконує дію <code>чародія_додати</code> від першого обʼєкта щодо другого обʼєкта. Результат виконання цієї дії кладеться
+на стопку.</p>
+<h2>Протокол</h2>
+<ol>
+<li>Покласти перший (лівий) обʼєкт на стопку.</li>
+<li>Покласти другий (правий) обʼєкт на стопку.</li>
+<li><code>Додати</code>.</li>
+</ol>
+<h2>Втілення</h2>
+<p>Псевдокод втілення в МаМа:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">ціль б = забрати_зі_стопки();
+ціль а = забрати_зі_стопки();
+ціль р = а.чародія_додати(б);
+якщо р == падіння {
+  // ...обробка падіння...
+} інакше {
+  покласти_на_стопку(р);
+}
+</code></div></pre>
+<h2>Приклад</h2>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">а + б
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">Звернутись а
+Звернутись б
+Додати
+</code></div></pre>
 
     <div class="XDocsPageContentBcFw">
-      <a data-is-prev="true" href="./виконання-дій.html">Відступ</a>
-      <a data-is-next="true" href="./ВПокластиЧисло.html">Наступ</a >
+      <a data-is-prev="true" href="./утилізація-памʼяті.html">Відступ</a>
+      
     </div>
   </div>
 </div>
