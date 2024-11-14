@@ -14,7 +14,7 @@
 
   <link rel="icon" type="image/png" href="./ресурси/мавка.лого.png" />
   <link rel="icon" sizes="any" type="image/svg+xml" href="./ресурси/мавка.лого.svg">
-  
+
   <link rel="stylesheet" href="./ресурси/highlight-atom-one-dark.css">
   <link rel="stylesheet" href="./ресурси/мавка.css?ВМ=0.112.0+А">
 
@@ -36,7 +36,7 @@
         </div>
         Архів
       </a>
-      <a href="./0.111.0/мама/index.html" class="MavkaNavigationLink">
+      <a href="https://машина.мавка.укр" class="MavkaNavigationLink">
         <div class="MavkaNavigationLinkIcon">
           <img src="ресурси/мама.лого.svg" alt="">
         </div>
@@ -178,7 +178,7 @@
       <img src="./ресурси/ціль.лого.svg" class="MavkaNavigationMobileMenuItemIcon" alt="">
       <span class="MavkaNavigationMobileMenuItemName">Ціль</span>
     </a>
-    <a href="./0.111.0/мама/index.html" class="MavkaNavigationMobileMenuItem">
+    <a href="https://машина.мавка.укр" class="MavkaNavigationMobileMenuItem">
       <img src="./ресурси/мама.лого.svg" class="MavkaNavigationMobileMenuItemIcon" alt="">
       <span class="MavkaNavigationMobileMenuItemName">МаМа</span>
     </a>
@@ -318,7 +318,7 @@
             class="hljs-title class_">Р</span><span class="hljs-title class_">акета</span>
   назва <span class="hljs-literal">текст</span>
   швидкість <span class="hljs-literal">число</span>
-  вага <span class="hljs-literal">число</span>
+  маса <span class="hljs-literal">число</span>
 <span class="hljs-keyword">кінець</span>
 
 <span class="hljs-keyword">дія</span> <span class="hljs-title class_">Р</span><span
@@ -328,12 +328,12 @@
               class="hljs-subst">%(я.назва)</span> запущено!"</span>)
 <span class="hljs-keyword">кінець</span>
 
-ніщо = <span class="hljs-title class_">Р</span><span class="hljs-title class_">акета</span>(назва=<span
-              class="hljs-string">"Ніщо"</span>,
-              швидкість=<span class="hljs-number">1000</span>,
-              вага=<span class="hljs-number">150</span>)
+земля = <span class="hljs-title class_">Р</span><span class="hljs-title class_">акета</span>(назва=<span
+              class="hljs-string">"Земля"</span>,
+               швидкість=<span class="hljs-number">299792458</span>,
+               маса=<span class="hljs-number">1</span>)
 
-ніщо.<span class="hljs-title function_">з</span><span class="hljs-title function_">апустити</span>()</code></pre>
+земля.<span class="hljs-title function_">з</span><span class="hljs-title function_">апустити</span>()</code></pre>
 
           <pre data-server-code="true" data-code-active="false"><code class="hljs мавка"><span
             class="hljs-keyword">взяти</span> <span
@@ -370,9 +370,7 @@
 <span class="hljs-keyword">чекати</span> відповідь = запит.<span class="hljs-title function_">н</span><span
               class="hljs-title function_">адіслати</span>(<span
               class="hljs-string">"0.0.0.0:8080/машини"</span>)
-машини = дід.<span class="hljs-title function_">р</span><span class="hljs-title function_">озібрати</span>&lt;<span
-              class="hljs-literal">список</span>&lt;<span
-              class="hljs-literal">текст</span>&gt;&gt;(<span
+машини = дід.<span class="hljs-title function_">р</span><span class="hljs-title function_">озібрати</span>(<span
               class="hljs-title function_">т</span><span class="hljs-title function_">екст</span>(відповідь.дані))
 
 <span class="hljs-keyword">перебрати</span> машини <span class="hljs-keyword">як</span> машина
@@ -421,17 +419,15 @@
       <div class="MavkaHomeFeatureIcon">🤤</div>
       <div class="MavkaHomeFeatureName">Швидка</div>
       <div class="MavkaHomeFeatureDescription">
-        Завдяки реалізації, <span class="MavkaTextSubject">Мавка</span> <span class="MavkaTextKeyword">є</span> досить
-        швидкою мовою.
+        Завдяки реалізації, <span class="MavkaTextSubject">Мавка</span> може бути досить
+        швидкою.
       </div>
     </div>
     <div class="MavkaHomeFeature">
       <div class="MavkaHomeFeatureIcon">😦</div>
       <div class="MavkaHomeFeatureName">Потужна</div>
       <div class="MavkaHomeFeatureDescription">
-        Простота мови дозволяє вирішувати складні <span class="MavkaTextKeyword">та</span> великі задачі легко <span
-        class="MavkaTextKeyword">і</span>
-        зручно.
+        Простота мови дозволяє вирішувати складні та великі задачі легко і зручно.
       </div>
     </div>
   </section>
@@ -442,8 +438,7 @@
     </section>
   </div>
   <div class="MavkaHomeAtomCredits">
-    Фото: Urquhart JS, et al.; Robert Hurt, the Spitzer Science Center; Robert
-    Benjamin
+    Ілюстрація: Urquhart JS, et al.; Robert Hurt, the Spitzer Science Center
   </div>
 
   <section class="MavkaFooter">
