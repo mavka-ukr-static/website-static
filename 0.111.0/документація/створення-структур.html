@@ -580,8 +580,10 @@
 <span class="hljs-keyword">кінець</span>
 </code></div></pre>
 <p>Щоб перевірити чи обʼєкт <keyword>є</keyword> певної структури, можна використати слово <code>є</code>:</p>
-<pre><div class="XDocsCodeWrapper"><code class="hljs">мій_паспорт = <span class="hljs-title class_">П</span><span class="hljs-title class_">аспорт</span>(прізвище=<span class="hljs-string">&quot;Когут&quot;</span>,
-                      імʼя=<span class="hljs-string">&quot;David&quot;</span>,
+<pre><div class="XDocsCodeWrapper"><code class="hljs">мій_паспорт = <span class="hljs-title class_">П</span><span class="hljs-title class_">аспорт</span>(номер=<span class="hljs-number">0</span>,
+                      дата_видачі=<span class="hljs-string">&quot;01.01.2001&quot;</span>,
+                      прізвище=<span class="hljs-string">&quot;Когут&quot;</span>,
+                      імʼя=ю<span class="hljs-string">&quot;David&quot;</span>,
                       по_батькові=<span class="hljs-string">&quot;Богданович&quot;</span>,
                       дата_народження=<span class="hljs-string">&quot;10.02.2001&quot;</span>,
                       стать=<span class="hljs-string">&quot;чоловіча&quot;</span>)
@@ -622,7 +624,14 @@
   свідомість <span class="hljs-literal">логічне</span>
 <span class="hljs-keyword">кінець</span>
 
-адам = <span class="hljs-title class_">Л</span><span class="hljs-title class_">юдина</span>(..., <span class="hljs-string">&quot;Давид&quot;</span>, <span class="hljs-literal">ні</span>)
+адам = <span class="hljs-title class_">Л</span><span class="hljs-title class_">юдина</span>(
+  <span class="hljs-title class_">Г</span><span class="hljs-title class_">олова</span>(), 
+  <span class="hljs-title class_">Ш</span><span class="hljs-title class_">ия</span>(), 
+  <span class="hljs-title class_">Т</span><span class="hljs-title class_">улуб</span>(), 
+  <span class="hljs-title class_">К</span><span class="hljs-title class_">інцівки</span>(), 
+  <span class="hljs-string">&quot;Давид&quot;</span>, 
+  <span class="hljs-literal">ні</span>
+)
 <span class="hljs-comment">;; єва = Людина(..., &quot;*&quot;, так)</span>
 
 <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(адам <span class="hljs-keyword">є</span> <span class="hljs-title class_">Л</span><span class="hljs-title class_">юдина</span>) <span class="hljs-comment">;; так</span>
