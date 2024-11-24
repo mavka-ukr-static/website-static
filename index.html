@@ -16,7 +16,7 @@
   <link rel="icon" sizes="any" type="image/svg+xml" href="./ресурси/мавка.лого.svg">
 
   <link rel="stylesheet" href="./ресурси/highlight-atom-one-dark.css">
-  <link rel="stylesheet" href="./ресурси/мавка.css?мч=1732470953">
+  <link rel="stylesheet" href="./ресурси/мавка.css?мч=1732471155">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap">
 </head>
@@ -287,7 +287,7 @@
         першою мовою у своєму роді.
       </h5>
       <div class="MavkaHomeHeroButtons">
-        <a href="https://архів.мавка.укр/випуск-мавки-0.112.0.html" onclick="onClickDownload(event)"
+        <a href="https://архів.мавка.укр/випуск-мавки-0.112.0.html"
            class="MavkaHomeHeroButton black">
           Завантажити
           <svg viewBox="0 0 151 151" fill="none" xmlns="http://www.w3.org/2000/svg" class="no-dark-shadow">
@@ -472,19 +472,6 @@
       document.documentElement.classList.add("loaded");
     }, 500);
   });
-
-  function onClickDownload(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    e.target.classList.add("pressed");
-    e.target.onclick = () => {
-    };
-    setTimeout(() => {
-      e.target.classList.remove("pressed");
-      e.target.click();
-    }, 125);
-    console.log("Download clicked");
-  }
 </script>
 </body>
 </html>
