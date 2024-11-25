@@ -109,6 +109,20 @@
   Зміна властивостей
 </a>
 <a
+  href="./отримання-елементів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Отримання елементів"
+>
+  Отримання елементів
+</a>
+<a
+  href="./зміна-елементів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Зміна елементів"
+>
+  Зміна елементів
+</a>
+<a
   href="./створення-модулів.html"
   class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="Створення модулів"
@@ -526,6 +540,16 @@
 <span class="hljs-keyword">кінець</span>
 
 <span class="hljs-title function_">д</span><span class="hljs-title function_">одати</span>(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;2&quot;</span>) <span class="hljs-comment">;; програма тут впаде</span>
+</code></div></pre>
+<p>Звичайні аргументи та аргументи з назвами можна комбінувати, але аргументи з назвами завжди повинні йти після звичайних:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-title function_">д</span><span class="hljs-title function_">одати</span>(<span class="hljs-number">2</span>, б=<span class="hljs-number">2</span>)
+</code></div></pre>
+<p>У випадку комбінування аргументів з назвами та звичайних аргументів, аргументи з назвами мають вищий пріоритет:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-title function_">д</span><span class="hljs-title function_">одати</span>(а <span class="hljs-literal">число</span>, б <span class="hljs-literal">число</span>) <span class="hljs-literal">число</span>
+  <span class="hljs-keyword">вернути</span> а + б
+<span class="hljs-keyword">кінець</span>
+
+<span class="hljs-title function_">д</span><span class="hljs-title function_">одати</span>(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>, а=<span class="hljs-number">3</span>) <span class="hljs-comment">;; аргумент &quot;а&quot; буде 3</span>
 </code></div></pre>
 
     <div class="XDocsPageContentBcFw">

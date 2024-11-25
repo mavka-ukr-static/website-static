@@ -109,6 +109,20 @@
   Зміна властивостей
 </a>
 <a
+  href="./отримання-елементів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Отримання елементів"
+>
+  Отримання елементів
+</a>
+<a
+  href="./зміна-елементів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Зміна елементів"
+>
+  Зміна елементів
+</a>
+<a
   href="./створення-модулів.html"
   class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="Створення модулів"
@@ -527,10 +541,24 @@
 
 <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(якийсь_обʼєкт.якась_властивість)
 </code></div></pre>
+<p>Властивості обʼєктів можна видаляти:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">видалити</span> якийсь_обʼєкт.якась_властивість
+</code></div></pre>
+<p>Якщо властивість, що видаляється, описана в структурі обʼєкта і вона може бути <code>пусто</code>, її значення просто зміниться на
+<code>пусто</code>.</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">Я</span><span class="hljs-title class_">касьСтруктура</span>
+  якась_властивість
+<span class="hljs-keyword">кінець</span>
+
+якийсь_обʼєкт = <span class="hljs-title class_">Я</span><span class="hljs-title class_">касьСтруктура</span>(<span class="hljs-string">&quot;Ого...&quot;</span>)
+<span class="hljs-keyword">видалити</span> якийсь_обʼєкт.якась_властивість
+
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(якийсь_обʼєкт.якась_властивість)
+</code></div></pre>
 
     <div class="XDocsPageContentBcFw">
       <a data-is-prev="true" href="./отримання-властивостей.html">Відступ</a>
-      <a data-is-next="true" href="./створення-модулів.html">Наступ</a >
+      <a data-is-next="true" href="./отримання-елементів.html">Наступ</a >
     </div>
   </div>
 </div>

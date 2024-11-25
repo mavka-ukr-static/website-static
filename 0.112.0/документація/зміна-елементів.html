@@ -7,9 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="xdocs-url-prefix" content="./">
 
-  <meta name="description" content="словник це батьківська структура для всіх словників Мавки.">
+  <meta name="description" content="Як змінити елемент в Мавці">
 
-  <title>словник | Документація Мавки 0.112.0</title>
+  <title>Зміна елементів | Документація Мавки 0.112.0</title>
 
   <link rel="icon" type="image/png" href="./ресурси/тема/документація.лого.png" />
   <link rel="icon" sizes="any" type="image/svg+xml" href="./ресурси/тема/документація.лого.svg">
@@ -39,7 +39,7 @@
 <button
   class="XDocsPageNavigationItem"
   data-navigation-item="Практика"
-  data-navigation-item-expanded="false">
+  data-navigation-item-expanded="true">
   Практика
   <span class="XDocsPageNavigationItemArrow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -50,7 +50,7 @@
 <div
   class="XDocsPageNavigationSubmenu"
   data-navigation-submenu="Практика"
-  data-navigation-submenu-shown="false"
+  data-navigation-submenu-shown="true"
 >
   <a
   href="./перша-програма.html"
@@ -117,7 +117,7 @@
 </a>
 <a
   href="./зміна-елементів.html"
-  class="XDocsPageNavigationSubmenuItem "
+  class="XDocsPageNavigationSubmenuItem active"
   data-navigation-item="Зміна елементів"
 >
   Зміна елементів
@@ -325,7 +325,7 @@
 <button
   class="XDocsPageNavigationItem"
   data-navigation-item="Визначення"
-  data-navigation-item-expanded="true">
+  data-navigation-item-expanded="false">
   Визначення
   <span class="XDocsPageNavigationItemArrow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -336,7 +336,7 @@
 <div
   class="XDocsPageNavigationSubmenu"
   data-navigation-submenu="Визначення"
-  data-navigation-submenu-shown="true"
+  data-navigation-submenu-shown="false"
 >
   <a
   href="./обʼєкт-це.html"
@@ -417,7 +417,7 @@
 </a>
 <a
   href="./словник-це.html"
-  class="XDocsPageNavigationSubmenuItem active"
+  class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="словник"
 >
   словник
@@ -525,29 +525,19 @@
   </button>
   <div class="XDocsPageContent">
     
-    <h1>словник</h1>
-<p><code>словник</code> <keyword>це</keyword> батьківська структура для всіх словників <subject>Мавки</subject>.</p>
-<p><code>словник</code> описує такі властивості для своїх обʼєктів:</p>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">структура</span> <span class="hljs-title class_">с</span><span class="hljs-title class_">ловник</span>
-  розмір <span class="hljs-literal">число</span>
-<span class="hljs-keyword">кінець</span>
+    <h1>Зміна елементів</h1>
+<p>Змінити елемент обʼєкта в <subject>Мавці</subject> можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">якийсь_обʼєкт[ключ_елемента] = <span class="hljs-string">&quot;Що це?&quot;</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_отримати_елемент</span>(ключ)
+<pre><div class="XDocsCodeWrapper"><code class="hljs">якийсь_обʼєкт.якась_властивість[ключ_елемента] = <span class="hljs-number">3.21</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_змінити_елемент</span>(ключ, значення)
-</code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_видалити_елемент</span>(ключ)
-</code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">ч</span><span class="hljs-title function_">ародія_містить</span>(значення)
-</code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">к</span><span class="hljs-title function_">лючі</span>()
-</code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-literal">словник</span>.<span class="hljs-title function_">з</span><span class="hljs-title function_">начення</span>()
+<p>Елементи обʼєктів можна видаляти:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">видалити</span> якийсь_обʼєкт[ключ_елемента]
 </code></div></pre>
 
     <div class="XDocsPageContentBcFw">
-      <a data-is-prev="true" href="./список-це.html">Відступ</a>
-      <a data-is-next="true" href="./Модуль-це.html">Наступ</a >
+      <a data-is-prev="true" href="./отримання-елементів.html">Відступ</a>
+      <a data-is-next="true" href="./створення-модулів.html">Наступ</a >
     </div>
   </div>
 </div>

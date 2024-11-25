@@ -109,6 +109,20 @@
   Зміна властивостей
 </a>
 <a
+  href="./отримання-елементів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Отримання елементів"
+>
+  Отримання елементів
+</a>
+<a
+  href="./зміна-елементів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Зміна елементів"
+>
+  Зміна елементів
+</a>
+<a
   href="./створення-модулів.html"
   class="XDocsPageNavigationSubmenuItem "
   data-navigation-item="Створення модулів"
@@ -520,11 +534,11 @@
 дві_третини = <span class="hljs-number">2</span> / <span class="hljs-number">3</span>
 Е = м * шс ** <span class="hljs-number">2</span>
 </code></div></pre>
-<pre><div class="XDocsCodeWrapper"><code class="hljs">ніщо <span class="hljs-keyword">це</span> <span class="hljs-title class_">Р</span><span class="hljs-title class_">акета</span>(...)
+<pre><div class="XDocsCodeWrapper"><code class="hljs">земля <span class="hljs-keyword">це</span> <span class="hljs-title class_">Р</span><span class="hljs-title class_">акета</span>(...)
 паспорт <span class="hljs-keyword">це</span> <span class="hljs-title class_">Д</span><span class="hljs-title class_">окумент</span>(...)
 мавка <span class="hljs-keyword">це</span> <span class="hljs-title class_">М</span><span class="hljs-title class_">ашинаВказівок</span>(...)
 </code></div></pre>
-<p>Звернутись можна до субʼєкта, що визначений в поточному середовищі або в батьківському:</p>
+<p>Звернутись можна до субʼєкта, що визначений в поточному середовищі або в зовнішньому:</p>
 <pre><div class="XDocsCodeWrapper"><code class="hljs">а = <span class="hljs-number">2</span>
 
 <span class="hljs-keyword">дія</span> <span class="hljs-title function_">ф</span>()
@@ -537,7 +551,7 @@
 <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(а) <span class="hljs-comment">;; 2</span>
 <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(б) <span class="hljs-comment">;; помилка</span>
 </code></div></pre>
-<p>Визначити субʼєкт у батьківському середовищі можна використовуючи слово <code>:=</code>:</p>
+<p>Визначити субʼєкт у зовнішньому середовищі можна використовуючи слово <code>:=</code>:</p>
 <pre><div class="XDocsCodeWrapper"><code class="hljs">а = <span class="hljs-number">2</span>
 
 <span class="hljs-keyword">дія</span> <span class="hljs-title function_">ф</span>()
@@ -548,6 +562,26 @@
 
 <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(а) <span class="hljs-comment">;; 2</span>
 <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(б) <span class="hljs-comment">;; 3</span>
+</code></div></pre>
+<p>Видалити субʼєкт з поточного середовища можна інструкцією <code>видалити</code>:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">а = <span class="hljs-number">2</span>
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(а) <span class="hljs-comment">;; 2</span>
+<span class="hljs-keyword">видалити</span> а
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(а) <span class="hljs-comment">;; помилка</span>
+</code></div></pre>
+<p>Інструкція <code>видалити</code> вертає обʼєкт логічного, відповідно можна перевірити чи вдалося видалити субʼєкт:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">якщо</span> <span class="hljs-keyword">видалити</span> а
+  <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(<span class="hljs-string">&quot;Субʼєкт а видалено&quot;</span>)
+<span class="hljs-keyword">інакше</span>
+  <span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(<span class="hljs-string">&quot;Субʼєкт а не визначено&quot;</span>)
+<span class="hljs-keyword">кінець</span>
+</code></div></pre>
+<p>Існують також допоміжні слова <code>+=</code> <code>-=</code>, <code>*=</code>, <code>**=</code>, <code>/=</code>, <code>//=</code>, <code>%=</code>, <code>&lt;&lt;=</code>, <code>&gt;&gt;=</code>, <code>&gt;&gt;&gt;=</code>, <code>&amp;=</code>, <code>|=</code>, <code>^=</code>, що
+дозволяють простіше перезаписувати значення
+субʼєкта в поточному середовищі із застосуванням до нього арифметичних та двійкових дій:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">а = <span class="hljs-number">2</span>
+а += <span class="hljs-number">3</span> <span class="hljs-comment">;; те саме що а = а + 3</span>
+<span class="hljs-title function_">д</span><span class="hljs-title function_">рук</span>(а) <span class="hljs-comment">;; 5</span>
 </code></div></pre>
 
     <div class="XDocsPageContentBcFw">
