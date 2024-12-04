@@ -523,7 +523,8 @@ blockquote {
 }
 
 hr {
-  border: 1px dashed rgb(var(--border-rgb));
+  border: none;
+  border-top: 2px dashed rgb(var(--border-rgb));
   margin: 2rem 0;
 }
 hr.table {
@@ -634,6 +635,11 @@ hr.table {
 .XDocsSearchResults a:last-child {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+
+.XDocsPageContentComments {
+  border-top: 2px dashed rgb(var(--border-rgb));
+  margin: 2rem 0;
 }
 
 /*# sourceMappingURL=%D1%82%D0%B5%D0%BC%D0%B0.css.map */
