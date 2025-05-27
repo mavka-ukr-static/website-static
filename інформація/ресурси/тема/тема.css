@@ -672,4 +672,21 @@ hr.table {
   padding-top: 1.5rem;
 }
 
+details + details {
+  margin-top: 1rem;
+}
+
+details {
+  border: 1px solid rgb(var(--border-rgb));
+  padding: 1rem;
+}
+
+summary {
+  cursor: pointer;
+}
+
+li + li {
+  margin-top: 0.5rem;
+}
+
 /*# sourceMappingURL=%D1%82%D0%B5%D0%BC%D0%B0.css.map */
