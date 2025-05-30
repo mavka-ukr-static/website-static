@@ -238,6 +238,29 @@ html.mobile .XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter {
 .XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter .XDocsPageNavigationFooterConfigButton:active {
   background-color: rgb(var(--pressed-rgb));
 }
+.XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter .XDocsPageNavigationFooterTeoButton {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2.5rem;
+  background-color: rgb(var(--bg-rgb));
+  color: rgb(var(--muted-rgb));
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter .XDocsPageNavigationFooterTeoButton svg {
+  height: 0.8rem;
+}
+.XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter .XDocsPageNavigationFooterTeoButton:hover {
+  background-color: rgb(var(--hover-rgb));
+}
+.XDocsPage .XDocsPageNavigation .XDocsPageNavigationFooter .XDocsPageNavigationFooterTeoButton:active {
+  background-color: rgb(var(--pressed-rgb));
+}
 .XDocsPage .XDocsPageNavigation .XDocsPageNavigationItem {
   z-index: 9;
   padding: 0.75rem 1rem;
