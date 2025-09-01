@@ -539,20 +539,20 @@
 </ol>
 <p>Розбір на слова перебирає весь текст на створює &quot;послідовність слів&quot; на основі визначеного набору слів. Це також зветься лексичним аналізом.</p>
 <p>До прикладу, послідовність слів коду вище буде такою:</p>
-<pre><div class="XDocsCodeWrapper"><code class="hljs">Ідентифікатор 
-ЗнакРівно     
-Число         
-ЗнакПлюс      
-Число         
+<pre><div class="XDocsCodeWrapper"><code class="hljs">Ідентифікатор
+ЗнакРівно
+Число
+ЗнакПлюс
+Число
 </code></div></pre>
 <p>Після чого відбувається наступний крок розбору - на сполуки. На цьому кроці ми вже не використовуємо сирий текст, а натомість послідовність слів розібрану раніше.</p>
 <p>Тут ми якраз і створюємо структуровані предмети тексту коду, або як ще кажуть &quot;абстрактне синтаксичне дерево&quot;, яке виглядатиме для коду вище грубо кажучи так:</p>
 <pre><div class="XDocsCodeWrapper"><code class="hljs">Визначити {
-    ідентифікатор = <span class="hljs-string">&quot;сума&quot;</span>,
-    значення = ОпераціяДодавання {
-        ліво = 6,
-        право = 8 
-    }
+  ідентифікатор = <span class="hljs-string">&quot;сума&quot;</span>,
+  значення = ОпераціяДодавання {
+    ліво = 6,
+    право = 8
+  }
 }
 </code></div></pre>
 <p>Це також зветься синтаксичним аналізом.</p>
@@ -567,7 +567,7 @@
 </code></div></pre>
 <p>Ці вказівки записуються в спеціальний предмет &quot;Код&quot; в Мавці, який надалі передається в Машину і виконується.</p>
 <h2>Виконання</h2>
-<p>Тут багато не скажеш, адже процедура досить комплексна. Але, якщо коротко, то Машина перебирає всі вказівки та виконує кожну.</p>
+<p>На цьому етапі відбувається виконання згенерованих вказівок. Хоч процедура досить комплексна, але в основі звичайний перебір вказівок та виконання кожної. Під час перебору та виконня вказівок (але не обов'язково лише тут) також відбувається перевірка необхідності запуску очищувача. Якщо предметів надто багато або недостатньо памʼяті компʼютера буде запущено очищувач, який знищить предмети, з якими неможливо більше взаємодіяти в межах Машини.</p>
 <p>Ось неповний псевдокод виконання:</p>
 <pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-title function_">в</span><span class="hljs-title function_">иконати_код</span>(М: <span class="hljs-type">адреса</span>&lt;Машина&gt;, код: <span class="hljs-type">адреса</span>&lt;ПредметКоду&gt;) -&gt; <span class="hljs-type">адреса</span>&lt;Предмет&gt; {
   <span class="hljs-keyword">змінна</span> пв: <span class="hljs-type">натуральне</span> = 0;
@@ -576,15 +576,19 @@
   <span class="hljs-keyword">поки</span> пв &lt; код.розмір {
     <span class="hljs-keyword">змінна</span> вказівка = код.дані[пв];
 
+    <span class="hljs-keyword">якщо</span> <span class="hljs-built_in">п</span><span class="hljs-built_in">отрібно_запустити_очищувач</span>(М) {
+      <span class="hljs-built_in">з</span><span class="hljs-built_in">апустити_очищувач</span>(М);
+    }
+
     <span class="hljs-keyword">якщо</span> вказівка == ВПокласатиКонстанту {
-        <span class="hljs-comment">// ...</span>
+      <span class="hljs-comment">// ...</span>
     } <span class="hljs-keyword">інакше</span> <span class="hljs-keyword">якщо</span> вказівка == ВДодати {
-        <span class="hljs-comment">// ...</span>
+      <span class="hljs-comment">// ...</span>
     } <span class="hljs-keyword">інакше</span> <span class="hljs-keyword">якщо</span> вказівка == ВВизначити {
-        <span class="hljs-comment">// ...</span>
+      <span class="hljs-comment">// ...</span>
     } <span class="hljs-keyword">інакше</span> {
-        <span class="hljs-built_in">у</span><span class="hljs-built_in">вімкнути_стан_падіння</span>(М, <span class="hljs-string">&quot;Невідома вказівка&quot;</span>);
-        <span class="hljs-keyword">вернути</span> <span class="hljs-literal">пусто</span>;
+      <span class="hljs-built_in">у</span><span class="hljs-built_in">вімкнути_стан_падіння</span>(М, <span class="hljs-string">&quot;Невідома вказівка&quot;</span>);
+      <span class="hljs-keyword">вернути</span> <span class="hljs-literal">пусто</span>;
     }
 
     пв += 1;
