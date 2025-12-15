@@ -16,7 +16,7 @@
   <link rel="icon" sizes="any" type="image/svg+xml" href="./ресурси/мавка.лого.svg">
 
   <link rel="stylesheet" href="./ресурси/highlight-atom-one-dark.css">
-  <link rel="stylesheet" href="./ресурси/мавка.css?мч=1762202209">
+  <link rel="stylesheet" href="./ресурси/мавка.css?мч=1765838400">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap">
 </head>
@@ -41,7 +41,7 @@
     <a href="" class="MavkaNavigationLogo">
       <img src="./ресурси/мавка.лого.svg" alt="">
       <span class="MavkaNavigationLogoText">Мавка</span>
-      <span class="MavkaNavigationLogoVersion">0.122.3</span>
+      <span class="MavkaNavigationLogoVersion">0.123.0</span>
     </a>
     <div class="MavkaNavigationLinks">
       <a href="https://архів.мавка.укр" class="MavkaNavigationLink">
@@ -62,7 +62,7 @@
         </div>
         Часопис
       </a>
-      <a href="./0.122.3/документація/index.html" class="MavkaNavigationLink">
+      <a href="./0.123.0/документація/index.html" class="MavkaNavigationLink">
         <div class="MavkaNavigationLinkIcon">
           <img src="./ресурси/документація.лого.svg" alt="">
         </div>
@@ -180,7 +180,7 @@
   </header>
 
   <div class="MavkaNavigationMobileMenu" data-hidden="true">
-    <a href="./0.122.3/документація/index.html" class="MavkaNavigationMobileMenuItem">
+    <a href="./0.123.0/документація/index.html" class="MavkaNavigationMobileMenuItem">
       <img src="./ресурси/документація.лого.svg" class="MavkaNavigationMobileMenuItemIcon" alt="">
       <span class="MavkaNavigationMobileMenuItemName">Документація</span>
     </a>
@@ -253,7 +253,7 @@
 
     <div class="MavkaNavigationMobileMenuFooter">
       <img src="./ресурси/мавка.лого.svg" alt="">
-      Мавка 0.122.3
+      Мавка 0.123.0
       <button data-navigation-light-toggle="true" class="MavkaNavigationMobileMenuFooterConfigButton">
         <svg class="no-dark-shadow" data-navigation-light-toggle-badge-auto="true" xmlns="http://www.w3.org/2000/svg"
              viewBox="0 -960 960 960" fill="currentColor">
@@ -299,7 +299,7 @@
         втілювати ідеї українською мовою.
       </h5>
       <div class="MavkaHomeHeroButtons">
-        <a href="https://архів.мавка.укр/випуск-мавки-0.122.3.html"
+        <a href="https://архів.мавка.укр/випуск-мавки-0.123.0.html"
            class="MavkaHomeHeroButton black">
           Завантажити
           <svg viewBox="0 0 151 151" fill="none" xmlns="http://www.w3.org/2000/svg" class="no-dark-shadow">
@@ -346,7 +346,7 @@
 реакція = <span class="hljs-title class_">Р</span><span class="hljs-title class_">акета</span>(назва=<span
               class="hljs-string">"Реакція"</span>,
                  швидкість=<span class="hljs-number">299792458</span>,
-                 маса=<span class="hljs-literal">ні</span>)
+                 маса=<span class="hljs-literal">недійсне</span>)
 
 реакція.<span class="hljs-title function_">з</span><span class="hljs-title function_">апустити</span>()</code></pre>
 
@@ -377,7 +377,7 @@
 
           <div class="MavkaHomeHeroCodeBlockButtons">
             <a
-              href="https://архів.мавка.укр/випуск-мавки-0.122.3.html"
+              href="https://архів.мавка.укр/випуск-мавки-0.123.0.html"
               class="MavkaHomeHeroCodeBlockButton"
             >
               <svg viewBox="0 0 151 151" fill="none" xmlns="http://www.w3.org/2000/svg" class="no-dark-shadow">
@@ -435,7 +435,7 @@
       <div class="MavkaHomeFeatureIcon">🤤</div>
       <div class="MavkaHomeFeatureName">Швидка</div>
       <div class="MavkaHomeFeatureDescription">
-        Залежно від втілення, виконання Мавки може бути досить
+        Залежно від машини, виконання Мавки може бути досить
         швидким.
       </div>
     </div>
@@ -455,14 +455,16 @@
         <div class="MavkaHomeUsecaseDescription">
           Мавка надає природний досвід програмування. Ви можете виражати свої
           думки в коді так як ви дійсно думаєте.
-          Жодних посередників у вигляді чужих мов. 100% українською!
+          Жодних посередників у вигляді чужих мов.
+          <br>
+          100% українською!
         </div>
       </div>
       <div class="MavkaHomeUsecaseCode">
         <pre><div class="XDocsCodeWrapper"><code class="hljs">гаманець = матерія.<span class="hljs-title function_">в</span><span
           class="hljs-title function_">ідкрити_гаманець</span>(<span class="hljs-string">"***"</span>)
 
-<span class="hljs-keyword">спробувати</span> 
+<span class="hljs-keyword">спробувати</span>
   гаманець.<span class="hljs-title function_">н</span><span class="hljs-title function_">адіслати</span>(<span class="hljs-number">6</span>, <span
             class="hljs-string">"Заходь на чай"</span>, отримувач=<span class="hljs-string">"Андромеда"</span>)
 <span class="hljs-keyword">зловити</span> п
@@ -473,48 +475,27 @@
     </div>
     <div class="MavkaHomeUsecase">
       <div class="MavkaHomeUsecaseCode">
-<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">взяти</span> <span
-  class="hljs-keyword">означення</span> РМв1;
+        <pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">взяти</span> <span
+          class="hljs-keyword">означення</span> мавка;
 
-<span class="hljs-keyword">зовнішня</span> <span class="hljs-keyword">дія</span> <span
-    class="hljs-title function_">з</span><span class="hljs-title function_">авантажити_РМв1</span>(Р: <span
-    class="hljs-type">адреса</span>&lt;РМв1::Розширення&gt;) {
-  РМв1::<span class="hljs-built_in">н</span><span class="hljs-built_in">адрукувати</span>(Р, <span
-    class="hljs-string">"Вітання з розширення!"</span>);
+<span class="hljs-keyword">дія</span> <span class="hljs-title function_">з</span><span
+            class="hljs-title function_">апустити_мавку</span>() -> <span class="hljs-type">ц32</span> {
+  <span class="hljs-keyword">змінна</span> М = мавка::пристрій::<span class="hljs-title function_">с</span><span
+            class="hljs-title function_">творити_машину</span>();
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-keyword">вернути</span> <span class="hljs-number">0</span>;
 }
 </code></div></pre>
       </div>
-      <div class="MavkaHomeUsecaseInfo">
-        <div class="MavkaHomeUsecaseName">Розширюйте!</div>
-        <div class="MavkaHomeUsecaseDescription">
-          Система розширень Мавки дозволяє писати швидкий нативний код на
-          Цілі і легко підключати його до Мавки.
-          <br><i>(В розробці)</i>
-        </div>
-      </div>
-    </div>
-    <div class="MavkaHomeUsecase code-right">
       <div class="MavkaHomeUsecaseInfo">
         <div class="MavkaHomeUsecaseName">Вбудовуйте!</div>
         <div class="MavkaHomeUsecaseDescription">
           Мавку можна досить просто вбудувати у проєкт. Завдяки своїй простоті та
           динамічності Мавка буде потужним
           інструментом скриптування у ваших проєктах.
-          <br><i>(В розробці)</i>
+          <br>
+          (поки-що означення нестабільні)
         </div>
-      </div>
-      <div class="MavkaHomeUsecaseCode">
-        <pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">взяти</span> <span
-          class="hljs-keyword">означення</span> мавка;
-
-<span class="hljs-keyword">дія</span> <span class="hljs-title function_">з</span><span
-            class="hljs-title function_">апустити_мавку</span>() -> <span class="hljs-type">ц32</span> {
-  <span class="hljs-keyword">змінна</span> М = мавка::<span class="hljs-built_in">с</span><span
-            class="hljs-built_in">творити_машину</span>(<span class="hljs-comment">/* ... */</span>);
-  <span class="hljs-comment">// ...</span>
-  <span class="hljs-keyword">вернути</span> <span class="hljs-number">0</span>;
-}
-</code></div></pre>
       </div>
     </div>
   </section>
@@ -538,7 +519,7 @@
   </section>
 </div>
 
-<script src="./ресурси/мавка.js?v=0.122.3__0"></script>
+<script src="./ресурси/мавка.js?v=0.123.0__0"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PFF0HTWKB"></script>
 <script>
