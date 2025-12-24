@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="xdocs-url-prefix" content="./">
+
+  
+
+  <meta name="description" content="Як створити число в Мавці">
+
+  <title>Створення чисел | Документація Мавки 0.124.1</title>
+
+  <link rel="icon" type="image/png" href="./ресурси/тема/документація.лого.png" />
+  <link rel="icon" sizes="any" type="image/svg+xml" href="./ресурси/тема/документація.лого.svg">
+
+  <link rel="stylesheet" href="./ресурси/ядро/highlight-atom-one-dark.css">
+<link rel="stylesheet" href="./ресурси/тема/тема.css">
+</head>
+<body>
+
+<div class="XDocsPage">
+  <div class="XDocsPageNavigation" data-is-navigation="true" data-hidden-on-mobile="true"><div class="XDocsPageNavigationHead">
+  <a href="./index.html" class="XDocsPageNavigationHeadLogo">
+    <img src="./ресурси/тема/документація.лого.svg" alt="">
+  </a>
+</div>
+<div class="XDocsPageNavigationSearch">
+  <button>Пошук... (/)</button>
+  <iframe src="./ресурси/search.html"></iframe>
+</div>
+<a
+  href="./index.html"
+  class="XDocsPageNavigationItem "
+  data-navigation-item="Вступ"
+>
+  Вступ
+</a>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Практика"
+  data-navigation-item-expanded="true">
+  Практика
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Практика"
+  data-navigation-submenu-shown="true"
+>
+  <a
+  href="./перша-програма.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Перша програма"
+>
+  Перша програма
+</a>
+<a
+  href="./запис-визначень.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис визначень"
+>
+  Запис визначень
+</a>
+<a
+  href="./створення-дій.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення дій"
+>
+  Створення дій
+</a>
+<a
+  href="./здійснення-дій.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Здійснення дій"
+>
+  Здійснення дій
+</a>
+<a
+  href="./створення-структур.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення структур"
+>
+  Створення структур
+</a>
+<a
+  href="./створення-предметів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення предметів"
+>
+  Створення предметів
+</a>
+<a
+  href="./отримання-властивостей.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Отримання властивостей"
+>
+  Отримання властивостей
+</a>
+<a
+  href="./зміна-властивостей.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Зміна властивостей"
+>
+  Зміна властивостей
+</a>
+<a
+  href="./отримання-елементів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Отримання елементів"
+>
+  Отримання елементів
+</a>
+<a
+  href="./зміна-елементів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Зміна елементів"
+>
+  Зміна елементів
+</a>
+<a
+  href="./створення-модулів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення модулів"
+>
+  Створення модулів
+</a>
+<a
+  href="./створення-чисел.html"
+  class="XDocsPageNavigationSubmenuItem active"
+  data-navigation-item="Створення чисел"
+>
+  Створення чисел
+</a>
+<a
+  href="./створення-текстів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення текстів"
+>
+  Створення текстів
+</a>
+<a
+  href="./створення-списків.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення списків"
+>
+  Створення списків
+</a>
+<a
+  href="./створення-словників.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення словників"
+>
+  Створення словників
+</a>
+<a
+  href="./арифметичні-дії.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Арифметичні дії"
+>
+  Арифметичні дії
+</a>
+<a
+  href="./двійкові-дії.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Двійкові дії"
+>
+  Двійкові дії
+</a>
+<a
+  href="./дії-порівняння.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Дії порівняння"
+>
+  Дії порівняння
+</a>
+<a
+  href="./запис-умов.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис умов"
+>
+  Запис умов
+</a>
+<a
+  href="./запис-повторів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис повторів"
+>
+  Запис повторів
+</a>
+<a
+  href="./запис-переборів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис переборів"
+>
+  Запис переборів
+</a>
+<a
+  href="./запис-спроб.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис спроб"
+>
+  Запис спроб
+</a>
+<a
+  href="./запис-коментарів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис коментарів"
+>
+  Запис коментарів
+</a>
+<a
+  href="./чародії.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Чародії"
+>
+  Чародії
+</a>
+<a
+  href="./зовнішні-модулі.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Зовнішні модулі"
+>
+  Зовнішні модулі
+</a>
+<a
+  href="./праця-з-паками.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Праця з паками"
+>
+  Праця з паками
+</a>
+<a
+  href="./діалог.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Діалог"
+>
+  Діалог
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Теорія"
+  data-navigation-item-expanded="false">
+  Теорія
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Теорія"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./стисло-як-працює-мавка.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Стисло, як працює Мавка?"
+>
+  Стисло, як працює Мавка?
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Глобальні"
+  data-navigation-item-expanded="false">
+  Глобальні
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Глобальні"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./дійсне.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="дійсне"
+>
+  дійсне
+</a>
+<a
+  href="./недійсне.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="недійсне"
+>
+  недійсне
+</a>
+<a
+  href="./Структура.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Структура"
+>
+  Структура
+</a>
+<a
+  href="./Число.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Число"
+>
+  Число
+</a>
+<a
+  href="./Текст.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Текст"
+>
+  Текст
+</a>
+<a
+  href="./Дія.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Дія"
+>
+  Дія
+</a>
+<a
+  href="./Список.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Список"
+>
+  Список
+</a>
+<a
+  href="./Словник.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Словник"
+>
+  Словник
+</a>
+<a
+  href="./Модуль.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Модуль"
+>
+  Модуль
+</a>
+<a
+  href="./Дані.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Дані"
+>
+  Дані
+</a>
+<a
+  href="./ДіапазонЧисел.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ДіапазонЧисел"
+>
+  ДіапазонЧисел
+</a>
+<a
+  href="./Код.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Код"
+>
+  Код
+</a>
+<a
+  href="./Параметр.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Параметр"
+>
+  Параметр
+</a>
+<a
+  href="./ПеребірДаних.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірДаних"
+>
+  ПеребірДаних
+</a>
+<a
+  href="./ПеребірДіапазонуЧисел.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірДіапазонуЧисел"
+>
+  ПеребірДіапазонуЧисел
+</a>
+<a
+  href="./ПеребірПослідовності.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірПослідовності"
+>
+  ПеребірПослідовності
+</a>
+<a
+  href="./ПеребірСловника.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірСловника"
+>
+  ПеребірСловника
+</a>
+<a
+  href="./ПеребірСписку.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірСписку"
+>
+  ПеребірСписку
+</a>
+<a
+  href="./ПеребірТексту.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірТексту"
+>
+  ПеребірТексту
+</a>
+<a
+  href="./Послідовність.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Послідовність"
+>
+  Послідовність
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Бібліотека"
+  data-navigation-item-expanded="false">
+  Бібліотека
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Бібліотека"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./бібліотека-читати.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Читати"
+>
+  Читати
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Кінець"
+  data-navigation-item-expanded="false">
+  Кінець
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Кінець"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./подяка.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Подяка"
+>
+  Подяка
+</a>
+<a
+  href="./післясцена.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Післясцена"
+>
+  Післясцена
+</a>
+</div>
+<div class="XDocsPageNavigationFooterWrapper">
+  <div class="XDocsPageNavigationFooter">
+    <a href="https://мавка.укр"><img src="./ресурси/тема/мавка.лого.svg" alt=""></a>
+    <a href="https://мавка.укр" style="all: unset; cursor: pointer; margin-right: 0.4ch;">Мавка</a>0.124.1
+  </div>
+</div>
+</div>
+  <button data-is-mobile-navigation-toggle="true" class="XDocsPageMobileNavigationToggle">
+    <svg data-menu-icon="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+    </svg>
+    <svg data-close-icon="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+         fill="currentColor">
+      <path
+        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+    </svg>
+  </button>
+  <div class="XDocsPageContent">
+    
+    <h1>Створення чисел</h1>
+<p>Записати створення числа в Мавці можна так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-number">0</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-number">1</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">-<span class="hljs-number">2</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-string">&#x27;є&#x27;</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-number">3.14</span>
+</code></div></pre>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">-<span class="hljs-number">2.71828</span>
+</code></div></pre>
+
+    
+    <div class="XDocsPageContentBcFw">
+      <a data-is-prev="true" href="./створення-модулів.html">Відступ</a>
+      <a data-is-next="true" href="./створення-текстів.html">Наступ</a >
+    </div>
+    
+  </div>
+</div>
+
+<script src="./ресурси/ядро/ядро.js"></script>
+<script src="./ресурси/тема/тема.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PFF0HTWKB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0PFF0HTWKB');
+</script>
+</body>
+</html>
