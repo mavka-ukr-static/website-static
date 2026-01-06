@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="xdocs-url-prefix" content="./">
+
+  
+
+  <meta name="description" content="Стисло, як працює мова програмування Мавка">
+
+  <title>Стисло, як працює Мавка? | Документація Мавки 0.124.2</title>
+
+  <link rel="icon" type="image/png" href="./ресурси/тема/документація.лого.png" />
+  <link rel="icon" sizes="any" type="image/svg+xml" href="./ресурси/тема/документація.лого.svg">
+
+  <link rel="stylesheet" href="./ресурси/ядро/highlight-atom-one-dark.css">
+<link rel="stylesheet" href="./ресурси/тема/тема.css">
+</head>
+<body>
+
+<div class="XDocsPage">
+  <div class="XDocsPageNavigation" data-is-navigation="true" data-hidden-on-mobile="true"><div class="XDocsPageNavigationHead">
+  <a href="./index.html" class="XDocsPageNavigationHeadLogo">
+    <img src="./ресурси/тема/документація.лого.svg" alt="">
+  </a>
+</div>
+<div class="XDocsPageNavigationSearch">
+  <button>Пошук... (/)</button>
+  <iframe src="./ресурси/search.html"></iframe>
+</div>
+<a
+  href="./index.html"
+  class="XDocsPageNavigationItem "
+  data-navigation-item="Вступ"
+>
+  Вступ
+</a>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Практика"
+  data-navigation-item-expanded="false">
+  Практика
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Практика"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./перша-програма.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Перша програма"
+>
+  Перша програма
+</a>
+<a
+  href="./визначення-діячів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Визначення діячів"
+>
+  Визначення діячів
+</a>
+<a
+  href="./створення-дій.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення дій"
+>
+  Створення дій
+</a>
+<a
+  href="./здійснення-дій.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Здійснення дій"
+>
+  Здійснення дій
+</a>
+<a
+  href="./створення-структур.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення структур"
+>
+  Створення структур
+</a>
+<a
+  href="./створення-предметів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення предметів"
+>
+  Створення предметів
+</a>
+<a
+  href="./отримання-властивостей.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Отримання властивостей"
+>
+  Отримання властивостей
+</a>
+<a
+  href="./зміна-властивостей.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Зміна властивостей"
+>
+  Зміна властивостей
+</a>
+<a
+  href="./отримання-елементів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Отримання елементів"
+>
+  Отримання елементів
+</a>
+<a
+  href="./зміна-елементів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Зміна елементів"
+>
+  Зміна елементів
+</a>
+<a
+  href="./створення-модулів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення модулів"
+>
+  Створення модулів
+</a>
+<a
+  href="./створення-чисел.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення чисел"
+>
+  Створення чисел
+</a>
+<a
+  href="./створення-текстів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення текстів"
+>
+  Створення текстів
+</a>
+<a
+  href="./створення-списків.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення списків"
+>
+  Створення списків
+</a>
+<a
+  href="./створення-словників.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створення словників"
+>
+  Створення словників
+</a>
+<a
+  href="./арифметичні-дії.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Арифметичні дії"
+>
+  Арифметичні дії
+</a>
+<a
+  href="./двійкові-дії.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Двійкові дії"
+>
+  Двійкові дії
+</a>
+<a
+  href="./дії-порівняння.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Дії порівняння"
+>
+  Дії порівняння
+</a>
+<a
+  href="./запис-умов.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис умов"
+>
+  Запис умов
+</a>
+<a
+  href="./запис-повторів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис повторів"
+>
+  Запис повторів
+</a>
+<a
+  href="./запис-переборів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис переборів"
+>
+  Запис переборів
+</a>
+<a
+  href="./запис-спроб.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис спроб"
+>
+  Запис спроб
+</a>
+<a
+  href="./запис-коментарів.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Запис коментарів"
+>
+  Запис коментарів
+</a>
+<a
+  href="./чародії.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Чародії"
+>
+  Чародії
+</a>
+<a
+  href="./зовнішні-модулі.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Зовнішні модулі"
+>
+  Зовнішні модулі
+</a>
+<a
+  href="./праця-з-паками.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Праця з паками"
+>
+  Праця з паками
+</a>
+<a
+  href="./діалог.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Діалог"
+>
+  Діалог
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Теорія"
+  data-navigation-item-expanded="true">
+  Теорія
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Теорія"
+  data-navigation-submenu-shown="true"
+>
+  <a
+  href="./стисло-як-працює-мавка.html"
+  class="XDocsPageNavigationSubmenuItem active"
+  data-navigation-item="Стисло, як працює Мавка?"
+>
+  Стисло, як працює Мавка?
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Глобальні"
+  data-navigation-item-expanded="false">
+  Глобальні
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Глобальні"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./дійсне.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="дійсне"
+>
+  дійсне
+</a>
+<a
+  href="./недійсне.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="недійсне"
+>
+  недійсне
+</a>
+<a
+  href="./Структура.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Структура"
+>
+  Структура
+</a>
+<a
+  href="./Число.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Число"
+>
+  Число
+</a>
+<a
+  href="./Текст.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Текст"
+>
+  Текст
+</a>
+<a
+  href="./Дія.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Дія"
+>
+  Дія
+</a>
+<a
+  href="./Список.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Список"
+>
+  Список
+</a>
+<a
+  href="./Словник.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Словник"
+>
+  Словник
+</a>
+<a
+  href="./Модуль.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Модуль"
+>
+  Модуль
+</a>
+<a
+  href="./Дані.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Дані"
+>
+  Дані
+</a>
+<a
+  href="./ДіапазонЧисел.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ДіапазонЧисел"
+>
+  ДіапазонЧисел
+</a>
+<a
+  href="./Код.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Код"
+>
+  Код
+</a>
+<a
+  href="./Параметр.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Параметр"
+>
+  Параметр
+</a>
+<a
+  href="./ПеребірДаних.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірДаних"
+>
+  ПеребірДаних
+</a>
+<a
+  href="./ПеребірДіапазонуЧисел.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірДіапазонуЧисел"
+>
+  ПеребірДіапазонуЧисел
+</a>
+<a
+  href="./ПеребірПослідовності.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірПослідовності"
+>
+  ПеребірПослідовності
+</a>
+<a
+  href="./ПеребірСловника.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірСловника"
+>
+  ПеребірСловника
+</a>
+<a
+  href="./ПеребірСписку.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірСписку"
+>
+  ПеребірСписку
+</a>
+<a
+  href="./ПеребірТексту.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="ПеребірТексту"
+>
+  ПеребірТексту
+</a>
+<a
+  href="./Послідовність.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Послідовність"
+>
+  Послідовність
+</a>
+<a
+  href="./нескінченність.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="нескінченність"
+>
+  нескінченність
+</a>
+<a
+  href="./невизначеність.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="невизначеність"
+>
+  невизначеність
+</a>
+<a
+  href="./друк.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="друк"
+>
+  друк
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Бібліотека"
+  data-navigation-item-expanded="false">
+  Бібліотека
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Бібліотека"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./бібліотека-читати.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Читати"
+>
+  Читати
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Кінець"
+  data-navigation-item-expanded="false">
+  Кінець
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Кінець"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./подяка.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Подяка"
+>
+  Подяка
+</a>
+<a
+  href="./післясцена.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Післясцена"
+>
+  Післясцена
+</a>
+</div>
+<div class="XDocsPageNavigationFooterWrapper">
+  <div class="XDocsPageNavigationFooter">
+    <a href="https://мавка.укр"><img src="./ресурси/тема/мавка.лого.svg" alt=""></a>
+    <a href="https://мавка.укр" style="all: unset; cursor: pointer; margin-right: 0.4ch;">Мавка</a>0.124.2
+  </div>
+</div>
+</div>
+  <button data-is-mobile-navigation-toggle="true" class="XDocsPageMobileNavigationToggle">
+    <svg data-menu-icon="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+    </svg>
+    <svg data-close-icon="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+         fill="currentColor">
+      <path
+        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+    </svg>
+  </button>
+  <div class="XDocsPageContent">
+    
+    <h1>Стисло, як працює Мавка?</h1>
+<p>Кроки виконання модуля Мавки такі:</p>
+<ol start="0">
+<li>Перекодування</li>
+<li>Розбір</li>
+<li>Переклад</li>
+<li>Виконання</li>
+</ol>
+<h2>Перекодування</h2>
+<p>Мавка не розуміє юнікоду, а натомість розуміє КД.
+Відповідно, щоб виконувати сирий текст, записаний у кодуванні UTF-8, необхідно його спочатку перекодувати в КД.</p>
+<p>Так як на більшості операційних систем та редакторів UTF-8 є кодуванням за замовчуванням, то ця процедура наразі виконується завжди.
+В подальшому можна буде вручну вказати кодування сирого тексту та оминути перекодування, якщо він вже закодований як КД.</p>
+<h2>Розбір</h2>
+<p>Розбирач Мавки перетворює сирий текст коду Мавки в структуровані предмети, з якими легко працювати в коді.</p>
+<p>До прикладу, візьмемо такий код:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">сума = <span class="hljs-number">6</span> + <span class="hljs-number">8</span>
+</code></div></pre>
+<p>Для людини цей код читається і сприймається досить просто, але як це зобразити в коді? Розібрати.</p>
+<p>Розбір має два кроки:</p>
+<ol>
+<li>На знаки</li>
+<li>На сполуки</li>
+</ol>
+<p>Розбір на знаки перебирає весь текст та створює &quot;послідовність знаків&quot; на основі визначеного набору знаків. Це також зветься лексичним аналізом.</p>
+<p>До прикладу, послідовність знаків коду вище буде такою:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">Ідентифікатор
+Рівно
+Число
+Плюс
+Число
+</code></div></pre>
+<p>Після чого відбувається наступний крок розбору - на сполуки. На цьому кроці ми вже не використовуємо сирий текст, а натомість послідовність знаків розібрану раніше.</p>
+<p>Тут ми якраз і створюємо структуровані предмети тексту коду, або як ще кажуть &quot;абстрактне синтаксичне дерево&quot;, яке виглядатиме для коду вище грубо кажучи так:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">Визначити {
+  ідентифікатор = <span class="hljs-string">&quot;сума&quot;</span>,
+  значення = ОпераціяДодавання {
+    ліво = 6,
+    право = 8
+  }
+}
+</code></div></pre>
+<p>Це також зветься синтаксичним аналізом.</p>
+<p>Вже на цьому кроці, маючи такі структуровані предмети, досить просто виконати програму. Але Мавка йде трошки далі.</p>
+<h2>Переклад</h2>
+<p>Після розбору сирого тексту Мавки на сполуки, ці сполуки перетворюються на зрозумілі для Машини Мавки вказівки.</p>
+<p>До прикладу, сполуки вище будуть перекладені на такі вказівки:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">ПокластиКонстанту 1 ;; 6
+ПокластиКонстанту 2 ;; 8
+Додати
+Визначити 0 ;; &quot;сума&quot;
+</code></div></pre>
+<p>Ці вказівки записуються в спеціальний предмет &quot;Код&quot; в Мавці, який надалі передається в Машину і виконується.</p>
+<h2>Виконання</h2>
+<p>На цьому етапі відбувається виконання згенерованих вказівок. Хоч процедура досить комплексна, але в основі звичайний перебір вказівок та виконання кожної. Під час перебору та виконання вказівок (але не обов'язково лише тут) також відбувається перевірка необхідності запуску очищувача. Якщо предметів надто багато або недостатньо памʼяті компʼютера буде запущено очищувач, який знищить предмети, з якими неможливо більше взаємодіяти в межах Машини.</p>
+<p>Ось неповний псевдокод виконання:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs"><span class="hljs-keyword">дія</span> <span class="hljs-title function_">в</span><span class="hljs-title function_">иконати_код</span>(М: <span class="hljs-type">адреса</span>&lt;Машина&gt;, код: <span class="hljs-type">адреса</span>&lt;ПредметКоду&gt;) -&gt; <span class="hljs-type">адреса</span>&lt;Предмет&gt; {
+  <span class="hljs-keyword">змінна</span> пв: <span class="hljs-type">природне</span> = 0;
+  <span class="hljs-keyword">змінна</span> результат: <span class="hljs-type">адреса</span>&lt;Предмет&gt; = <span class="hljs-literal">пусто</span>;
+
+  <span class="hljs-keyword">поки</span> пв &lt; код.розмір {
+    <span class="hljs-keyword">змінна</span> вказівка = код.дані[пв];
+
+    <span class="hljs-keyword">якщо</span> <span class="hljs-title function_">п</span><span class="hljs-title function_">отрібно_запустити_очищувач</span>(М) {
+      <span class="hljs-title function_">з</span><span class="hljs-title function_">апустити_очищувач</span>(М);
+    }
+
+    <span class="hljs-keyword">якщо</span> вказівка == ВПокластиКонстанту {
+      <span class="hljs-comment">// ...</span>
+    } <span class="hljs-keyword">інакше</span> <span class="hljs-keyword">якщо</span> вказівка == ВДодати {
+      <span class="hljs-comment">// ...</span>
+    } <span class="hljs-keyword">інакше</span> <span class="hljs-keyword">якщо</span> вказівка == ВВизначити {
+      <span class="hljs-comment">// ...</span>
+    } <span class="hljs-keyword">інакше</span> {
+      <span class="hljs-title function_">у</span><span class="hljs-title function_">вімкнути_стан_падіння</span>(М, <span class="hljs-string">&quot;Невідома вказівка&quot;</span>);
+      <span class="hljs-keyword">вернути</span> <span class="hljs-literal">пусто</span>;
+    }
+
+    пв += 1;
+  }
+
+  <span class="hljs-keyword">вернути</span> результат;
+}
+</code></div></pre>
+
+    
+    <div class="XDocsPageContentBcFw">
+      <a data-is-prev="true" href="./діалог.html">Відступ</a>
+      <a data-is-next="true" href="./дійсне.html">Наступ</a >
+    </div>
+    
+  </div>
+</div>
+
+<script src="./ресурси/ядро/ядро.js"></script>
+<script src="./ресурси/тема/тема.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PFF0HTWKB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0PFF0HTWKB');
+</script>
+</body>
+</html>
