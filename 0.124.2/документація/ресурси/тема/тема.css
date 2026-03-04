@@ -468,7 +468,7 @@ html.mobile .XDocsCodeChina {
 
 html.dark .XDocsCodeChina {
   opacity: 0.1;
-  filter: drop-shadow(0 0 2px white);
+  filter: drop-shadow(0 0 1px white);
 }
 
 .XDocsCodeImages {
