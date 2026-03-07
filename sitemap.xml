@@ -2,234 +2,458 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://мавка.укр/0.124.2/документація/index.html</loc>
-    <lastmod>2026-03-05T07:48:04.069Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Дані.html</loc>
-    <lastmod>2026-03-05T07:48:04.125Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/ДіапазонЧисел.html</loc>
-    <lastmod>2026-03-05T07:48:04.125Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Дія.html</loc>
-    <lastmod>2026-03-05T07:48:04.121Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Код.html</loc>
-    <lastmod>2026-03-05T07:48:04.126Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Модуль.html</loc>
-    <lastmod>2026-03-05T07:48:04.124Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Параметр.html</loc>
-    <lastmod>2026-03-05T07:48:04.126Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/ПеребірДаних.html</loc>
-    <lastmod>2026-03-05T07:48:04.127Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/ПеребірДіапазонуЧисел.html</loc>
-    <lastmod>2026-03-05T07:48:04.127Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/ПеребірПослідовності.html</loc>
-    <lastmod>2026-03-05T07:48:04.128Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/ПеребірСловника.html</loc>
-    <lastmod>2026-03-05T07:48:04.128Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/ПеребірСписку.html</loc>
-    <lastmod>2026-03-05T07:48:04.128Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/ПеребірТексту.html</loc>
-    <lastmod>2026-03-05T07:48:04.129Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Послідовність.html</loc>
-    <lastmod>2026-03-05T07:48:04.129Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Словник.html</loc>
-    <lastmod>2026-03-05T07:48:04.123Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Список.html</loc>
-    <lastmod>2026-03-05T07:48:04.122Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Структура.html</loc>
-    <lastmod>2026-03-05T07:48:04.118Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Текст.html</loc>
-    <lastmod>2026-03-05T07:48:04.120Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/Число.html</loc>
-    <lastmod>2026-03-05T07:48:04.119Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/арифметичні-дії.html</loc>
-    <lastmod>2026-03-05T07:48:04.096Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/бібліотека-читати.html</loc>
-    <lastmod>2026-03-05T07:48:04.132Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/визначення-діячів.html</loc>
-    <lastmod>2026-03-05T07:48:04.082Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/двійкові-дії.html</loc>
-    <lastmod>2026-03-05T07:48:04.097Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/друк.html</loc>
-    <lastmod>2026-03-05T07:48:04.132Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/діалог.html</loc>
-    <lastmod>2026-03-05T07:48:04.105Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/дійсне.html</loc>
-    <lastmod>2026-03-05T07:48:04.115Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/дії-порівняння.html</loc>
-    <lastmod>2026-03-05T07:48:04.098Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/запис-коментарів.html</loc>
-    <lastmod>2026-03-05T07:48:04.102Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/запис-переборів.html</loc>
-    <lastmod>2026-03-05T07:48:04.100Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/запис-повторів.html</loc>
-    <lastmod>2026-03-05T07:48:04.099Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/запис-спроб.html</loc>
-    <lastmod>2026-03-05T07:48:04.101Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/запис-умов.html</loc>
-    <lastmod>2026-03-05T07:48:04.098Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/здійснення-дій.html</loc>
-    <lastmod>2026-03-05T07:48:04.087Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/зміна-властивостей.html</loc>
-    <lastmod>2026-03-05T07:48:04.091Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/зміна-елементів.html</loc>
-    <lastmod>2026-03-05T07:48:04.092Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/зовнішні-модулі.html</loc>
-    <lastmod>2026-03-05T07:48:04.103Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/невизначеність.html</loc>
-    <lastmod>2026-03-05T07:48:04.131Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/недійсне.html</loc>
-    <lastmod>2026-03-05T07:48:04.116Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/нескінченність.html</loc>
-    <lastmod>2026-03-05T07:48:04.130Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/отримання-властивостей.html</loc>
-    <lastmod>2026-03-05T07:48:04.090Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/отримання-елементів.html</loc>
-    <lastmod>2026-03-05T07:48:04.092Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/перша-програма.html</loc>
-    <lastmod>2026-03-05T07:48:04.079Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/подяка.html</loc>
-    <lastmod>2026-03-05T07:48:04.133Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/праця-з-паками.html</loc>
-    <lastmod>2026-03-05T07:48:04.104Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/післясцена.html</loc>
-    <lastmod>2026-03-05T07:48:04.133Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.218Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/створення-дій.html</loc>
-    <lastmod>2026-03-05T07:48:04.085Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/створення-модулів.html</loc>
-    <lastmod>2026-03-05T07:48:04.093Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/створення-предметів.html</loc>
-    <lastmod>2026-03-05T07:48:04.088Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/створення-словників.html</loc>
-    <lastmod>2026-03-05T07:48:04.096Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/створення-списків.html</loc>
-    <lastmod>2026-03-05T07:48:04.094Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/створення-структур.html</loc>
-    <lastmod>2026-03-05T07:48:04.087Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/створення-текстів.html</loc>
-    <lastmod>2026-03-05T07:48:04.094Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/створення-чисел.html</loc>
-    <lastmod>2026-03-05T07:48:04.093Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/стисло-як-працює-мавка.html</loc>
-    <lastmod>2026-03-05T07:48:04.109Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/чародії.html</loc>
-    <lastmod>2026-03-05T07:48:04.102Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/0.124.2/документація/ідея.html</loc>
-    <lastmod>2026-03-05T07:48:04.134Z</lastmod>
+    <lastmod>2026-03-07T22:55:53.225Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/index.html</loc>
+    <lastmod>2026-03-07T22:56:02.219Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Дані.html</loc>
+    <lastmod>2026-03-07T22:56:02.273Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/ДіапазонЧисел.html</loc>
+    <lastmod>2026-03-07T22:56:02.274Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Дія.html</loc>
+    <lastmod>2026-03-07T22:56:02.269Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Код.html</loc>
+    <lastmod>2026-03-07T22:56:02.274Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Модуль.html</loc>
+    <lastmod>2026-03-07T22:56:02.272Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Параметр.html</loc>
+    <lastmod>2026-03-07T22:56:02.275Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/ПеребірДаних.html</loc>
+    <lastmod>2026-03-07T22:56:02.275Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/ПеребірДіапазонуЧисел.html</loc>
+    <lastmod>2026-03-07T22:56:02.276Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/ПеребірПослідовності.html</loc>
+    <lastmod>2026-03-07T22:56:02.276Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/ПеребірСловника.html</loc>
+    <lastmod>2026-03-07T22:56:02.277Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/ПеребірСписку.html</loc>
+    <lastmod>2026-03-07T22:56:02.277Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/ПеребірТексту.html</loc>
+    <lastmod>2026-03-07T22:56:02.278Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Послідовність.html</loc>
+    <lastmod>2026-03-07T22:56:02.278Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Словник.html</loc>
+    <lastmod>2026-03-07T22:56:02.270Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Список.html</loc>
+    <lastmod>2026-03-07T22:56:02.269Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Структура.html</loc>
+    <lastmod>2026-03-07T22:56:02.265Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Текст.html</loc>
+    <lastmod>2026-03-07T22:56:02.267Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/Число.html</loc>
+    <lastmod>2026-03-07T22:56:02.266Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/арифметичні-дії.html</loc>
+    <lastmod>2026-03-07T22:56:02.244Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/бібліотека-читати.html</loc>
+    <lastmod>2026-03-07T22:56:02.281Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/визначення-діячів.html</loc>
+    <lastmod>2026-03-07T22:56:02.231Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/двійкові-дії.html</loc>
+    <lastmod>2026-03-07T22:56:02.245Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/друк.html</loc>
+    <lastmod>2026-03-07T22:56:02.281Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/діалог.html</loc>
+    <lastmod>2026-03-07T22:56:02.254Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/дійсне.html</loc>
+    <lastmod>2026-03-07T22:56:02.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/дії-порівняння.html</loc>
+    <lastmod>2026-03-07T22:56:02.246Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/запис-коментарів.html</loc>
+    <lastmod>2026-03-07T22:56:02.249Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/запис-переборів.html</loc>
+    <lastmod>2026-03-07T22:56:02.248Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/запис-повторів.html</loc>
+    <lastmod>2026-03-07T22:56:02.247Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/запис-спроб.html</loc>
+    <lastmod>2026-03-07T22:56:02.249Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/запис-умов.html</loc>
+    <lastmod>2026-03-07T22:56:02.246Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/здійснення-дій.html</loc>
+    <lastmod>2026-03-07T22:56:02.233Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/зміна-властивостей.html</loc>
+    <lastmod>2026-03-07T22:56:02.239Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/зміна-елементів.html</loc>
+    <lastmod>2026-03-07T22:56:02.240Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/зовнішні-модулі.html</loc>
+    <lastmod>2026-03-07T22:56:02.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/невизначеність.html</loc>
+    <lastmod>2026-03-07T22:56:02.280Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/недійсне.html</loc>
+    <lastmod>2026-03-07T22:56:02.264Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/нескінченність.html</loc>
+    <lastmod>2026-03-07T22:56:02.279Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/отримання-властивостей.html</loc>
+    <lastmod>2026-03-07T22:56:02.238Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/отримання-елементів.html</loc>
+    <lastmod>2026-03-07T22:56:02.240Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/перша-програма.html</loc>
+    <lastmod>2026-03-07T22:56:02.227Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/подяка.html</loc>
+    <lastmod>2026-03-07T22:56:02.282Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/праця-з-паками.html</loc>
+    <lastmod>2026-03-07T22:56:02.253Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/післясцена.html</loc>
+    <lastmod>2026-03-07T22:56:02.283Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/створення-дій.html</loc>
+    <lastmod>2026-03-07T22:56:02.232Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/створення-модулів.html</loc>
+    <lastmod>2026-03-07T22:56:02.241Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/створення-предметів.html</loc>
+    <lastmod>2026-03-07T22:56:02.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/створення-словників.html</loc>
+    <lastmod>2026-03-07T22:56:02.244Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/створення-списків.html</loc>
+    <lastmod>2026-03-07T22:56:02.242Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/створення-структур.html</loc>
+    <lastmod>2026-03-07T22:56:02.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/створення-текстів.html</loc>
+    <lastmod>2026-03-07T22:56:02.242Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/створення-чисел.html</loc>
+    <lastmod>2026-03-07T22:56:02.241Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/стисло-як-працює-мавка.html</loc>
+    <lastmod>2026-03-07T22:56:02.257Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/чародії.html</loc>
+    <lastmod>2026-03-07T22:56:02.250Z</lastmod>
+  </url>
+  <url>
+    <loc>https://мавка.укр/0.124.4/документація/ідея.html</loc>
+    <lastmod>2026-03-07T22:56:02.283Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/index.html</loc>
-    <lastmod>2026-03-05T07:47:56.011Z</lastmod>
+    <lastmod>2026-03-07T22:55:50.865Z</lastmod>
   </url>
   <url>
     <loc>https://мавка.укр/інформація/index.html</loc>
-    <lastmod>2026-03-05T07:48:05.420Z</lastmod>
+    <lastmod>2026-03-07T22:56:03.487Z</lastmod>
   </url>
 </urlset>
