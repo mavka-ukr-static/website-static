@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="xdocs-url-prefix" content="./">
+
+  
+
+  <meta name="description" content="УВАГА: ця інструкція більше не актуальна починаючи з версії Мавки 0.123.0.">
+
+  <title>Будуємо Мавку на GNU/Linux | Часопис Мавки</title>
+
+  <link rel="icon" type="image/png" href="./ресурси/тема/часопис.лого.png" />
+  <link rel="icon" sizes="any" type="image/svg+xml" href="./ресурси/тема/часопис.лого.svg">
+
+  <link rel="stylesheet" href="./ресурси/ядро/highlight-atom-one-dark.css">
+<link rel="stylesheet" href="./ресурси/тема/тема.css">
+</head>
+<body>
+
+<div class="XDocsPage">
+  <div class="XDocsPageNavigation" data-is-navigation="true" data-hidden-on-mobile="true"><div class="XDocsPageNavigationHead">
+  <a href="./index.html" class="XDocsPageNavigationHeadLogo">
+    <img src="./ресурси/тема/часопис.лого.svg" alt="">
+  </a>
+</div>
+<div class="XDocsPageNavigationSearch">
+  <button>Пошук... (/)</button>
+  <iframe src="./ресурси/search.html"></iframe>
+</div>
+<a
+  href="./index.html"
+  class="XDocsPageNavigationItem "
+  data-navigation-item="Вступ"
+>
+  Вступ
+</a>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Грудень 2025"
+  data-navigation-item-expanded="false">
+  Грудень 2025
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Грудень 2025"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./2025-12-24-мавка-0-124-0.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Мавка 0.124.0"
+>
+  Мавка 0.124.0
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Травень 2025"
+  data-navigation-item-expanded="false">
+  Травень 2025
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Травень 2025"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./2025-05-26-мавка-0-121-0.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Цикл подій, tcp, планувальник - Мавка 0.121.0"
+>
+  Цикл подій, tcp, планувальник - Мавка 0.121.0
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Лютий 2025"
+  data-navigation-item-expanded="true">
+  Лютий 2025
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Лютий 2025"
+  data-navigation-submenu-shown="true"
+>
+  <a
+  href="./2025-02-28-будуємо-мавку-на-linux-швидкий-спосіб.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Будуємо Мавку на GNU/Linux (швидкий спосіб)"
+>
+  Будуємо Мавку на GNU/Linux (швидкий спосіб)
+</a>
+<a
+  href="./2025-02-28-будуємо-мавку-на-linux.html"
+  class="XDocsPageNavigationSubmenuItem active"
+  data-navigation-item="Будуємо Мавку на GNU/Linux"
+>
+  Будуємо Мавку на GNU/Linux
+</a>
+<a
+  href="./2025-02-27-новий-розбирач-мавки.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Новий розбирач Мавки"
+>
+  Новий розбирач Мавки
+</a>
+<a
+  href="./2025-02-14-переїзд-вебсервісів-мавки.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Переїзд вебсервісів Мавки"
+>
+  Переїзд вебсервісів Мавки
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Січень 2025"
+  data-navigation-item-expanded="false">
+  Січень 2025
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Січень 2025"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./2025-01-03-дієкод.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Дієкод"
+>
+  Дієкод
+</a>
+<a
+  href="./2025-01-01-порядок-5.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Порядок 5.0"
+>
+  Порядок 5.0
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Грудень 2024"
+  data-navigation-item-expanded="false">
+  Грудень 2024
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Грудень 2024"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./2024-12-01-створюємо-розширення-мавки.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="Створюємо розширення Мавки"
+>
+  Створюємо розширення Мавки
+</a>
+</div>
+<button
+  class="XDocsPageNavigationItem"
+  data-navigation-item="Вересень 2024"
+  data-navigation-item-expanded="false">
+  Вересень 2024
+  <span class="XDocsPageNavigationItemArrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M480-357.85 253.85-584 296-626.15l184 184 184-184L706.15-584 480-357.85Z"></path>
+    </svg>
+  </span>
+</button>
+<div
+  class="XDocsPageNavigationSubmenu"
+  data-navigation-submenu="Вересень 2024"
+  data-navigation-submenu-shown="false"
+>
+  <a
+  href="./2024-09-08-реформа.html"
+  class="XDocsPageNavigationSubmenuItem "
+  data-navigation-item="У Мавки реформа!"
+>
+  У Мавки реформа!
+</a>
+</div>
+<div class="XDocsPageNavigationFooterWrapper">
+  <div class="XDocsPageNavigationFooter">
+    <a href="https://мавка.укр"><img src="./ресурси/тема/мавка.лого.svg" alt=""></a>
+    Часопис<a href="https://мавка.укр" style="all: unset; cursor: pointer; margin-right: 0.4ch; margin-left: 0.4ch;">Мавки</a>
+  </div>
+</div>
+</div>
+  <button data-is-mobile-navigation-toggle="true" class="XDocsPageMobileNavigationToggle">
+    <svg data-menu-icon="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
+      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+    </svg>
+    <svg data-close-icon="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+         fill="currentColor">
+      <path
+        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+    </svg>
+  </button>
+  <div class="XDocsPageContent">
+    
+    <h1>Будуємо Мавку на GNU/Linux</h1>
+<blockquote>
+<p>УВАГА: ця інструкція більше не актуальна починаючи з версії Мавки 0.123.0.</p>
+</blockquote>
+<p>Як збудувати Мавку на Linux з джерельних файлів? Читайте далі.</p>
+<h2>Встановлення залежностей</h2>
+<p>Вам будуть потрібні <strong>Ціль</strong>, <strong>Clang</strong>, <strong>Git</strong> та деякі <em>C libs</em>.</p>
+<p>Встановлення залежностей на <strong>Ubuntu Linux</strong>:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">sudo apt install git clang libreadline-dev liburing-dev libidn2-dev
+</code></div></pre>
+<p>Встановлення залежностей на <strong>Arch Linux</strong>:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">sudo pacman -S git clang readline liburing libidn2
+</code></div></pre>
+<p>Після встановлення залежностей вище, треба завантажити та встановити <strong>Ціль</strong>.</p>
+<p>В <a href="https://github.com/mavka-ukr/mavka">репозиторії Мавки</a> треба дізнатись необхідну версію
+Цілі та завантажити її з <a href="https://xn--80ae5bu9f.xn--k1avt2b.xn--j1amh">Архіву Цілі</a>.</p>
+<p>Після завантаження, архів необхідно розпакувати та скопіювати звідти виконуваний файл <code>ціль</code> в теку <code>/usr/local/bin</code></p>
+<p>Далі треба перевірити чи Ціль встановлено. Для цього достатньо у вашому терміналі прописати команду
+<code>ціль</code>: якщо виведе
+версію і додаткову інформацію - все добре.</p>
+<h2>Будування</h2>
+<p>Клонуємо репозиторій Мавки:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">git clone https://github.com/mavka-ukr/mavka --depth=1
+</code></div></pre>
+<p>Відкриваємо клоновану теку:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">cd mavka
+</code></div></pre>
+<p>Будуємо:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">TSIL=&quot;ціль&quot; sh external/scripts/build.sh
+</code></div></pre>
+<p>Переходимо в теку будування відповідної версії:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">cd будування/{версія}/лінукс-ікс86_64
+</code></div></pre>
+<p>Пробуємо:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">./готове/мавка
+</code></div></pre>
+<p>Для зручності, Мавку можна встановити глобально:</p>
+<pre><div class="XDocsCodeWrapper"><code class="hljs">sudo cp ./готове/мавка /usr/local/bin
+</code></div></pre>
+<hr>
+<p><em>Написав <a href="https://xn--90afr.xn--j1amh">Давид</a>. Опубліковано 28.02.2025. Оновлено 03.11.2025.</em></p>
+
+    
+    <div class="XDocsPageContentBcFw">
+      <a data-is-prev="true" href="./2025-02-28-будуємо-мавку-на-linux-швидкий-спосіб.html">Відступ</a>
+      <a data-is-next="true" href="./2025-02-27-новий-розбирач-мавки.html">Наступ</a >
+    </div>
+    
+  </div>
+</div>
+
+<script src="./ресурси/ядро/ядро.js"></script>
+<script src="./ресурси/тема/тема.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PFF0HTWKB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0PFF0HTWKB');
+</script>
+</body>
+</html>
